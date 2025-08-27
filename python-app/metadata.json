@@ -1,0 +1,217 @@
+{
+  "metadatos": [
+    {
+      "id": "Documento para CHAT bot de pagina web_0",
+      "texto": "Nuestra empresa ofrece soluciones integrales en tecnología, abarcando múltiples áreas \npara cubrir las necesidades de nuestros clientes en distintos sectores. 1. Desarrollo de Software \nContamos con un equipo especializado en el desarrollo de software a medida, adaptado a \ndistintos rubros e industrias. Creamos aplicaciones web, móviles y de escritorio, sistemas de \ngestión, plataformas personalizadas y soluciones escalables que se ajustan a los \nrequerimientos específicos de cada cliente. 2.",
+      "documento": "Documento para CHAT bot de pagina web"
+    },
+    {
+      "id": "Documento para CHAT bot de pagina web_1",
+      "texto": "Inteligencia Artificial y Análisis de Datos \nOfrecemos servicios basados en inteligencia artificial para analizar datos estructurados y no \nestructurados, generar reportes automatizados, detectar patrones y predecir \ncomportamientos. Desarrollamos modelos de visión por computadora para la detección y \nclasificación de objetos en imágenes y videos en tiempo real, aplicables a seguridad, \nindustria, agricultura, salud, logística y más. 3.",
+      "documento": "Documento para CHAT bot de pagina web"
+    },
+    {
+      "id": "Documento para CHAT bot de pagina web_2",
+      "texto": "Desarrollo de Dispositivos IoT \nDiseñamos y desarrollamos soluciones de hardware y firmware para Internet de las Cosas \n(IoT). Integramos sensores, módulos GPS, sistemas de comunicación y actuadores para \naplicaciones como monitoreo ambiental, trazabilidad, control industrial, automatización del \nhogar y gestión remota de dispositivos. Nuestros dispositivos pueden operar de forma \nautónoma o conectados a redes (Wi-Fi, GSM, LoRa, etc.). 4.",
+      "documento": "Documento para CHAT bot de pagina web"
+    },
+    {
+      "id": "Documento para CHAT bot de pagina web_3",
+      "texto": "Plataforma de Gestión IoT \nDisponemos de una plataforma propia para la gestión integral de dispositivos IoT, donde los \nusuarios pueden visualizar datos en tiempo real, configurar alertas, controlar dispositivos \nremotamente y acceder a reportes históricos. La plataforma está diseñada para ser segura, \nescalable y multiusuario, facilitando la supervisión y control de proyectos IoT desde \ncualquier lugar. 5.",
+      "documento": "Documento para CHAT bot de pagina web"
+    },
+    {
+      "id": "Documento para CHAT bot de pagina web_4",
+      "texto": "Digitalización en lenguaje natural \nLa digitalización en lenguaje natural es el proceso de tomar frases humanas (texto o voz) y \nconvertirlas automáticamente en datos estructurados, listos para sistemas digitales. Desarrollamos un agente de IA conversacional que interpreta el lenguaje natural y lo \ntransforma en datos estructurados y utilizables por sistemas informáticos. 1.",
+      "documento": "Documento para CHAT bot de pagina web"
+    },
+    {
+      "id": "Documento para CHAT bot de pagina web_5",
+      "texto": "Desarrollo de Software (ampliado) \nNos especializamos en el desarrollo de software a medida para resolver necesidades \nespecíficas de empresas, organizaciones e instituciones. Diseñamos y construimos \nsistemas robustos, escalables y eficientes, tanto para entornos web como móviles y de \nescritorio.",
+      "documento": "Documento para CHAT bot de pagina web"
+    },
+    {
+      "id": "Documento para CHAT bot de pagina web_6",
+      "texto": "Trabajamos en distintas áreas del desarrollo, incluyendo: \n●​ Aplicaciones web con paneles de administración, gestión de usuarios, integración \ncon bases de datos, dashboards interactivos y módulos personalizados.​\n \n●​ Aplicaciones móviles nativas o híbridas (Android/iOS) con funciones como \ngeolocalización, notificaciones push, registro de datos offline y sincronización en la \nnube.​\n \n●​ Software de escritorio para uso industrial, institucional o científico, con interfaces \nintuitivas y acceso local o en red.​\n \n●​ Sistemas embebidos para integración con hardware personalizado \n(microcontroladores, PLC, dispositivos IoT).​\n \n●​ Integraciones API con sistemas externos, pasarelas de pago, servicios en la nube o \nplataformas de terceros.​\n \nImplementamos soluciones en diversos lenguajes y entornos tecnológicos como Python, \nJavaScript (Node.js, React, Vue), Java, C#, PHP, MySQL, PostgreSQL, Firebase, entre \notros.",
+      "documento": "Documento para CHAT bot de pagina web"
+    },
+    {
+      "id": "Documento para CHAT bot de pagina web_7",
+      "texto": "Adaptamos nuestras herramientas al tipo de proyecto y a la infraestructura del cliente. Utilizamos metodologías ágiles (Scrum/Kanban) para garantizar entregas parciales, ciclos \niterativos, revisión continua con el cliente y adaptación a cambios. Brindamos \nmantenimiento, soporte técnico y actualizaciones una vez finalizado el desarrollo.",
+      "documento": "Documento para CHAT bot de pagina web"
+    },
+    {
+      "id": "Documento para CHAT bot de pagina web_8",
+      "texto": "Cada proyecto de software parte de un análisis detallado de requerimientos, lo que nos \npermite entregar soluciones personalizadas, eficientes y alineadas con los objetivos del \ncliente. Nuestro compromiso es desarrollar herramientas digitales que generen valor real, \noptimicen procesos y potencien el crecimiento del negocio. 2.",
+      "documento": "Documento para CHAT bot de pagina web"
+    },
+    {
+      "id": "Documento para CHAT bot de pagina web_9",
+      "texto": "Inteligencia Artificial y Análisis de Datos (versión ampliada) \nEn nuestra empresa ofrecemos soluciones basadas en Inteligencia Artificial (IA) y análisis \navanzado de datos para ayudar a empresas y organizaciones a transformar información en \nconocimiento útil y accionable.",
+      "documento": "Documento para CHAT bot de pagina web"
+    },
+    {
+      "id": "Documento para CHAT bot de pagina web_10",
+      "texto": "Desarrollamos modelos personalizados de aprendizaje \nautomático (machine learning) y aprendizaje profundo (deep learning), adaptados a \nproblemas reales en distintos rubros, como industria, salud, seguridad, logística, agricultura, \ny más. a) Análisis de Datos \nTrabajamos con datos estructurados (bases de datos, hojas de cálculo) y no estructurados \n(texto libre, imágenes, señales, audio o video).",
+      "documento": "Documento para CHAT bot de pagina web"
+    },
+    {
+      "id": "Documento para CHAT bot de pagina web_11",
+      "texto": "Ofrecemos los siguientes servicios: \n●​ Procesamiento y limpieza de datos: tratamos datos incompletos, duplicados, \nruidosos o dispersos.​\n \n●​ Análisis exploratorio: generación de estadísticas, visualización de tendencias, \nidentificación de correlaciones.​\n \n●​ Modelado predictivo: predicción de comportamientos, valores futuros o eventos \nutilizando modelos supervisados y no supervisados.​\n \n●​ Segmentación de clientes: agrupación inteligente de usuarios o productos según \ncaracterísticas similares.​\n \n●​ Automatización de reportes: generación dinámica de informes con dashboards \ninteractivos.​\n \nUsamos herramientas como Python (Pandas, NumPy, Scikit-learn, XGBoost), R, SQL, \nPower BI, Tableau, entre otras, y trabajamos con grandes volúmenes de datos (Big Data) \ncuando es necesario.",
+      "documento": "Documento para CHAT bot de pagina web"
+    },
+    {
+      "id": "Documento para CHAT bot de pagina web_12",
+      "texto": "b) Visión por Computadora (Computer Vision) \nDesarrollamos soluciones de visión por computadora para interpretar imágenes y videos en \ntiempo real o desde archivos grabados.",
+      "documento": "Documento para CHAT bot de pagina web"
+    },
+    {
+      "id": "Documento para CHAT bot de pagina web_13",
+      "texto": "Estas soluciones permiten automatizar tareas \nvisuales en distintos contextos: \n●​ Detección y clasificación de objetos: identificación de personas, vehículos, \nanimales, herramientas, defectos de producción, etc.​\n \n●​ Reconocimiento facial: identificación o verificación de identidad a partir de \nimágenes o cámaras en vivo.​\n \n●​ Conteo automático: personas, autos, productos en líneas de montaje, etc.​\n \n●​ Control de calidad visual: detección de fallas, deformaciones o errores en \nproductos industriales.​\n \n●​ Lectura automática de textos y códigos: OCR (reconocimiento óptico de \ncaracteres), detección de matrículas, códigos QR o códigos de barras.​\n \nTrabajamos con frameworks como TensorFlow, PyTorch, OpenCV, YOLO (You Only Look \nOnce), Detectron2, MediaPipe, entre otros.",
+      "documento": "Documento para CHAT bot de pagina web"
+    },
+    {
+      "id": "Documento para CHAT bot de pagina web_14",
+      "texto": "c) Procesamiento de Lenguaje Natural (NLP) \nTambién aplicamos IA para trabajar con texto y lenguaje, ofreciendo soluciones como: \n●​ Clasificación automática de textos y correos electrónicos​\n \n●​ Análisis de sentimiento en redes sociales o encuestas​\n \n●​ Extracción de palabras clave o entidades​\n \n●​ Chatbots inteligentes y asistentes virtuales​\n \n●​ Sistemas de recomendación basados en texto​\n \nUtilizamos modelos modernos como BERT, GPT, Gemini, spaCy, Transformers, y otros.",
+      "documento": "Documento para CHAT bot de pagina web"
+    },
+    {
+      "id": "Documento para CHAT bot de pagina web_15",
+      "texto": "d) Integración y Despliegue \nTodos nuestros modelos de inteligencia artificial pueden integrarse a sistemas existentes \nmediante APIs REST o servicios embebidos. Brindamos soluciones listas para producción y \nfáciles de escalar.",
+      "documento": "Documento para CHAT bot de pagina web"
+    },
+    {
+      "id": "Documento para CHAT bot de pagina web_16",
+      "texto": "Ofrecemos: \n●​ Entrenamiento, validación y optimización de modelos.​\n \n●​ Integración con dashboards, apps móviles o sistemas empresariales.​\n \n●​ Monitorización de desempeño del modelo en tiempo real.​\n \n●​ Mejora continua mediante retraining con nuevos datos.​\n \ne) Casos de uso comunes \nNuestros clientes suelen utilizar nuestros servicios de IA para resolver problemas como: \n●​ Detección automática de intrusos en cámaras de seguridad.​\n \n●​ Seguimiento de activos o maquinaria en fábricas o campos.​\n \n●​ Control de acceso mediante reconocimiento facial.​\n \n●​ Predicción de demanda o consumo energético.​\n \n●​ Monitoreo ambiental usando imágenes satelitales o cámaras.​\n \n●​ Clasificación de productos en comercio electrónico.",
+      "documento": "Documento para CHAT bot de pagina web"
+    },
+    {
+      "id": "Documento para CHAT bot de pagina web_17",
+      "texto": "3. Desarrollo de Dispositivos IoT (versión ampliada) \nEn nuestra empresa desarrollamos soluciones completas de hardware y firmware para \nproyectos IoT (Internet de las Cosas), diseñadas a medida según las necesidades de \ncada cliente o industria. Integramos sensores, sistemas de comunicación, módulos de \nposicionamiento y actuadores para permitir la recolección, transmisión y procesamiento de \ndatos en tiempo real o diferido.",
+      "documento": "Documento para CHAT bot de pagina web"
+    },
+    {
+      "id": "Documento para CHAT bot de pagina web_18",
+      "texto": "a) Diseño de Dispositivos Personalizados \nCreamos dispositivos electrónicos embebidos que combinan sensores, microcontroladores y \nmódulos de comunicación para tareas específicas. Nuestra experiencia incluye: \n●​ Diseño electrónico de placas PCB personalizadas.​\n \n●​ Programación de firmware para microcontroladores (Arduino, ESP32, STM32, \nRaspberry Pi, etc.",
+      "documento": "Documento para CHAT bot de pagina web"
+    },
+    {
+      "id": "Documento para CHAT bot de pagina web_19",
+      "texto": ").​\n \n●​ Desarrollo de prototipos funcionales y cajas físicas para ambientes industriales \no exteriores.​\n \n●​ Integración de múltiples sensores (temperatura, humedad, presión, gases, \nluminosidad, corriente, movimiento, etc. ).​\n \n●​ Módulos GPS para rastreo y geolocalización de activos.​\n \n●​ Actuadores para control de válvulas, motores, relés, alarmas, luces, entre otros.​\n \nb) Conectividad y Protocolos \nNuestros dispositivos pueden operar de forma local, autónoma o conectados a redes.",
+      "documento": "Documento para CHAT bot de pagina web"
+    },
+    {
+      "id": "Documento para CHAT bot de pagina web_20",
+      "texto": "Soportamos distintos protocolos y tecnologías de comunicación según la aplicación: \n●​ Wi-Fi: ideal para zonas con cobertura de red local.​\n \n●​ GSM/GPRS/3G/4G: conectividad móvil mediante módulos como SIM800, A7670, \nSIM7600, entre otros.​\n \n●​ LoRa / LoRaWAN: bajo consumo y largo alcance, ideal para monitoreo rural o \nindustrial.​\n \n●​ Bluetooth / BLE: para comunicación cercana con smartphones u otros dispositivos.​\n \n●​ RS-485, Modbus, I2C, SPI, UART: protocolos de comunicación industrial o entre \nsensores.​\n \nImplementamos cifrado y autenticación cuando se requiere seguridad en la transmisión de \ndatos.",
+      "documento": "Documento para CHAT bot de pagina web"
+    },
+    {
+      "id": "Documento para CHAT bot de pagina web_21",
+      "texto": "c) Energía y Autonomía \nDiseñamos soluciones optimizadas para bajo consumo energético, incluyendo: \n●​ Alimentación por batería recargable o pilas reemplazables.​\n \n●​ Paneles solares para dispositivos autónomos en exteriores.​\n \n●​ Manejo de modos de suspensión y bajo consumo.​\n \n●​ Detección de fallos de energía y reconexión automática.​\n \nEsto permite que los dispositivos funcionen por largos períodos sin mantenimiento, \nespecialmente en zonas remotas.",
+      "documento": "Documento para CHAT bot de pagina web"
+    },
+    {
+      "id": "Documento para CHAT bot de pagina web_22",
+      "texto": "d) Aplicaciones de los Dispositivos IoT \nNuestros dispositivos IoT se utilizan en una variedad de casos de uso, entre ellos: \n●​ Monitoreo ambiental: temperatura, humedad, calidad del aire, gases tóxicos, \nniveles de agua.​\n \n●​ Rastreo GPS de vehículos, contenedores, ganado o personas.​\n \n●​ Sensado en agricultura de precisión: humedad del suelo, pluviometría, \nfotoperíodo.​\n \n●​ Control de energía eléctrica: consumo, corte remoto, detección de fallas.​\n \n●​ Seguridad y alarmas: detección de movimiento, apertura de puertas, incendio, \nintrusos.​\n \n●​ Automatización industrial y domótica: control remoto de sistemas, alertas y \nsupervisión continua.​\n \ne) Integración con Plataforma de Gestión \nTodos nuestros dispositivos pueden integrarse directamente con nuestra plataforma de \ngestión IoT, donde el usuario puede: \n●​ Ver datos en tiempo real.​\n \n●​ Configurar alertas o eventos automáticos.​\n \n●​ Activar o desactivar actuadores remotamente.​\n \n●​ Consultar históricos de variables y exportar datos.​\n \n●​ Monitorear el estado de conexión, batería y calidad de señal del dispositivo.​\n \nTambién ofrecemos la opción de integrarlos con plataformas externas mediante API o \nMQTT.",
+      "documento": "Documento para CHAT bot de pagina web"
+    },
+    {
+      "id": "Documento para CHAT bot de pagina web_23",
+      "texto": "4. Plataforma de Gestión IoT (versión ampliada) \nContamos con una plataforma propia de gestión IoT diseñada para que empresas, \norganizaciones y usuarios puedan administrar, monitorear y controlar dispositivos \nconectados desde cualquier lugar y en cualquier momento. Esta solución permite \ncentralizar la operación de sensores, actuadores y sistemas embebidos de forma segura, \neficiente y escalable.",
+      "documento": "Documento para CHAT bot de pagina web"
+    },
+    {
+      "id": "Documento para CHAT bot de pagina web_24",
+      "texto": "a) Visualización de Datos en Tiempo Real \nLa plataforma permite visualizar en dashboards personalizados los datos que envían los \ndispositivos en tiempo real: \n●​ Lecturas de sensores (temperatura, humedad, presión, nivel, gas, corriente, etc.",
+      "documento": "Documento para CHAT bot de pagina web"
+    },
+    {
+      "id": "Documento para CHAT bot de pagina web_25",
+      "texto": ").​\n \n●​ Estado de actuadores (encendido/apagado, activado/desactivado).​\n \n●​ Localización GPS de dispositivos móviles o fijos.​\n \n●​ Indicadores del sistema: señal, batería, conectividad, errores.​\n \nLos gráficos e interfaces son responsivos y adaptables a distintos tipos de dispositivos (PC, \ntablet, celular).",
+      "documento": "Documento para CHAT bot de pagina web"
+    },
+    {
+      "id": "Documento para CHAT bot de pagina web_26",
+      "texto": "b) Configuración y Control Remoto \nDesde la plataforma, los usuarios pueden: \n●​ Modificar parámetros de configuración del dispositivo (frecuencia de envío, \numbrales, identificadores).​\n \n●​ Activar o desactivar salidas digitales o actuadores como válvulas, relés, alarmas, \nluces, motores.​\n \n●​ Enviar comandos personalizados al dispositivo.​\n \n●​ Definir perfiles de comportamiento según reglas (por ejemplo: \"si la temperatura \nsupera 30°C, encender ventilador\").​\n \nEsto permite automatizar procesos y reaccionar en tiempo real ante condiciones \nespecíficas.",
+      "documento": "Documento para CHAT bot de pagina web"
+    },
+    {
+      "id": "Documento para CHAT bot de pagina web_27",
+      "texto": "c) Alertas, Notificaciones y Eventos \nEl sistema cuenta con un módulo de gestión de eventos que permite: \n●​ Definir alertas personalizadas por umbral, cambio brusco, pérdida de señal, \nbatería baja, etc.​\n \n●​ Recibir notificaciones por correo electrónico, SMS o Telegram.​\n \n●​ Registrar todos los eventos importantes en un log accesible por el usuario.​\n \nLas alertas pueden generar acciones automáticas en los dispositivos o activar protocolos de \nrespuesta.",
+      "documento": "Documento para CHAT bot de pagina web"
+    },
+    {
+      "id": "Documento para CHAT bot de pagina web_28",
+      "texto": "d) Almacenamiento Histórico y Reportes \nTodos los datos capturados se almacenan en una base de datos organizada, permitiendo: \n●​ Consultar registros históricos por fecha, sensor o ubicación.​\n \n●​ Descargar reportes en formato CSV o PDF.​\n \n●​ Visualizar tendencias, patrones y comportamiento a lo largo del tiempo.​\n \n●​ Realizar análisis comparativos entre dispositivos o ubicaciones.​\n \nIdeal para auditorías, mantenimiento preventivo, estudios técnicos o decisiones \nestratégicas.",
+      "documento": "Documento para CHAT bot de pagina web"
+    },
+    {
+      "id": "Documento para CHAT bot de pagina web_29",
+      "texto": "e) Gestión Multiusuario y Escalable \nNuestra plataforma es multiusuario y jerárquica: \n●​ Cada usuario accede solo a sus dispositivos o grupos asignados.​\n \n●​ Se pueden definir roles y permisos (administrador, operador, solo lectura, etc.",
+      "documento": "Documento para CHAT bot de pagina web"
+    },
+    {
+      "id": "Documento para CHAT bot de pagina web_30",
+      "texto": ").​\n \n●​ Los datos están aislados por cliente o empresa para garantizar la seguridad.​\n \n●​ Se puede escalar horizontalmente para soportar cientos o miles de dispositivos.​\n \nAdemás, permite administrar diferentes proyectos, clientes o instalaciones desde una \nsola cuenta maestra.",
+      "documento": "Documento para CHAT bot de pagina web"
+    },
+    {
+      "id": "Documento para CHAT bot de pagina web_31",
+      "texto": "f) Seguridad y Privacidad \nImplementamos mecanismos de seguridad robustos para garantizar la integridad y \nprivacidad de los datos: \n●​ Cifrado de datos en tránsito (TLS/HTTPS) y en reposo.​\n \n●​ Autenticación segura con usuario y contraseña, tokens o autenticación de dos \nfactores.​\n \n●​ Registros de acceso y cambios para trazabilidad.​\n \n●​ Gestión segura de claves de API y credenciales.​\n \nCumplimos con buenas prácticas de seguridad para ambientes industriales y públicos.",
+      "documento": "Documento para CHAT bot de pagina web"
+    },
+    {
+      "id": "Documento para CHAT bot de pagina web_32",
+      "texto": "g) Integración con Sistemas Externos \nNuestra plataforma puede interoperar con otros sistemas a través de: \n●​ API RESTful documentada y segura para consumo externo.​\n \n●​ Publicación/recepción por MQTT para sistemas en tiempo real.​\n \n●​ Exportación de datos a ERPs, CRMs, plataformas BI u otros sistemas de gestión.​\n \nTambién ofrecemos la posibilidad de desplegar instancias privadas o en la nube del \ncliente, si se requiere infraestructura dedicada. 5.",
+      "documento": "Documento para CHAT bot de pagina web"
+    },
+    {
+      "id": "Documento para CHAT bot de pagina web_33",
+      "texto": "Digitalización en lenguaje natural \nLa digitalización en lenguaje natural consiste en transformar expresiones humanas —ya \nsea escritas o habladas— en datos estructurados y organizados, listos para ser \nprocesados por sistemas digitales. En la práctica, esto significa que una persona puede registrar información simplemente \nhablando o escribiendo en lenguaje cotidiano, sin necesidad de llenar formularios complejos \nni seleccionar campos manualmente.",
+      "documento": "Documento para CHAT bot de pagina web"
+    },
+    {
+      "id": "Documento para CHAT bot de pagina web_34",
+      "texto": "El sistema de inteligencia artificial (IA) interpreta esa \nentrada y la convierte automáticamente en registros normalizados.",
+      "documento": "Documento para CHAT bot de pagina web"
+    },
+    {
+      "id": "Documento para CHAT bot de pagina web_35",
+      "texto": "Ejemplo:​\n Un usuario dicta o escribe: \n“Hoy Juan Pedro aplicó herbicida en la parcela norte durante 2 horas.” \nEl agente de IA procesa la frase y extrae las entidades relevantes: \n●​ Persona: Juan Pedro​\n \n●​ Tarea: Aplicó herbicida​\n \n●​ Lugar: Parcela norte​\n \n●​ Duración: 2 horas​\n \nCon esta interpretación, el texto libre se transforma en un registro digital estructurado que \npuede almacenarse en una tabla o base de datos.",
+      "documento": "Documento para CHAT bot de pagina web"
+    },
+    {
+      "id": "Documento para CHAT bot de pagina web_36",
+      "texto": "Beneficios de la digitalización en lenguaje natural \n●​ Simplicidad en el registro: El usuario habla o escribe de forma natural, reduciendo \ntiempos y errores en la carga manual.​\n \n●​ Automatización: El sistema identifica automáticamente personas, tareas, lugares, \nfechas, tiempos y otros campos predefinidos.​\n \n●​ Integración: Una vez digitalizados, los datos pueden utilizarse en informes, \nplanificación de actividades, generación de estadísticas, control de costos, gestión \nde personal y trazabilidad de operaciones.​\n \n●​ Flexibilidad: Permite capturar tanto registros individuales (ej.",
+      "documento": "Documento para CHAT bot de pagina web"
+    },
+    {
+      "id": "Documento para CHAT bot de pagina web_37",
+      "texto": "una tarea puntual) \ncomo grandes volúmenes de datos en procesos rutinarios.​\n \nEn resumen, la digitalización en lenguaje natural convierte la comunicación humana en \ninformación útil y accionable, facilitando la gestión eficiente de actividades y mejorando la \ncalidad de los datos disponibles en la organización. 6. Forma de pago \n \nLa plataforma ofrece un esquema mixto de servicios gratuitos y de pago por uso.",
+      "documento": "Documento para CHAT bot de pagina web"
+    },
+    {
+      "id": "Documento para CHAT bot de pagina web_38",
+      "texto": "●​ Servicios gratuitos: Incluyen todas aquellas funciones que no requieren el \nalmacenamiento de datos.",
+      "documento": "Documento para CHAT bot de pagina web"
+    },
+    {
+      "id": "Documento para CHAT bot de pagina web_39",
+      "texto": "Por ejemplo, un usuario puede utilizar el GPS de su \ndispositivo para visualizar en tiempo real sus movimientos o los de una máquina sin \ncosto alguno.​\n \n●​ Servicios de pago: En el momento en que el usuario decide grabar o registrar \ndatos (como guardar posiciones para consultarlas posteriormente), se aplicará un \ncargo por cada unidad registrada.​\n \nModalidad de pago \nEl sistema funciona bajo la modalidad de prepago: \n1.​ El usuario realiza una transferencia a la cuenta de la empresa, indicando su nombre \nde usuario y el monto que desea acreditar como saldo disponible.​\n \n2.​ La plataforma asigna una cuenta corriente virtual desde la cual se descuentan los \nconsumos, hasta agotar el saldo acreditado.​\n \n3.​ El prepago puede realizarse de forma mensual o anual, según las necesidades del \nusuario.​\n \nPolíticas de inactividad \nSi una cuenta permanece inactiva durante 3 meses y no dispone de saldo, todos los \nregistros almacenados se eliminarán de la base de datos.",
+      "documento": "Documento para CHAT bot de pagina web"
+    },
+    {
+      "id": "Documento para CHAT bot de pagina web_40",
+      "texto": "No obstante, dentro de ese plazo \nel usuario podrá descargar sus registros en formato CSV para conservarlos localmente.",
+      "documento": "Documento para CHAT bot de pagina web"
+    },
+    {
+      "id": "Documento para CHAT bot de pagina web_41",
+      "texto": "Tarifas \n●​ Registros manuales (ingresados directamente por el usuario) y registros \ngenerados por el agente de IA conversacional:​\n \n○​ 0,05 USD por registro.​\n \n●​ Registros automáticos (por ejemplo, posiciones GPS o datos de sensores):​\n \n○​ 0,05 USD por registro si el volumen diario no supera los 100 registros.​\n \n○​ 0,005 USD por registro si el volumen diario supera los 100 registros.​\n \nLos precios indicados no incluyen impuestos y podrán ser actualizados de \nacuerdo con las condiciones de la empresa.",
+      "documento": "Documento para CHAT bot de pagina web"
+    }
+  ],
+  "hashes": {
+    "Documento para CHAT bot de pagina web.pdf": "62ff7eb51a3003667c8c9229c415e281"
+  }
+}
