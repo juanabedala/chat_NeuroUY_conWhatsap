@@ -42,8 +42,8 @@ wa.on("message", async (msg) => {
 
     // 2) Preguntar a Gemini con ese contexto
     const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
-
+    const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
+    /*
     const prompt = `Eres un asistente técnico del viñedo.
 Pregunta del usuario:
 "${pregunta}"
@@ -55,6 +55,18 @@ Instrucciones:
 - Si el contexto responde, úsalo explícitamente citando la idea (sin URLs).
 - Si falta info, indica qué faltaría y responde con la mejor recomendación práctica.
 - Responde en español, claro y conciso, en 5-8 líneas.`;
+*/
+
+const prompt = `Usá el siguiente contexto para responder la pregunta del usuario, si no encuentras la respuesta intenta responderla tú,
+ten en cuenta que somos una empresa de TI que soluciona problemas a la industria y al agro.
+
+Contexto recuperado (relevante, puede tener ruido):
+${contextoPlano}
+
+Pregunta del usuario:
+${pregunta}`;
+
+
 
     const result = await model.generateContent(prompt);
     const texto = result?.response?.text?.() || "No tengo respuesta disponible.";
