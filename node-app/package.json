@@ -4,7 +4,7 @@
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
-    "postinstall": "node unzip.js",
+    "postinstall": "node node-app/unzip.js",
     "start": "node index.js"
   },
   "dependencies": {
