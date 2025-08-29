@@ -1,6 +1,9 @@
 # Imagen base con Node
 FROM node:18-bullseye
 
+# Instala unzip
+RUN apt-get update && apt-get install -y unzip
+
 # Instala dependencias necesarias para que Chromium corra
 RUN apt-get update && apt-get install -y \
     wget \
