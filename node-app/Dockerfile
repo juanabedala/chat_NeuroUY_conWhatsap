@@ -43,14 +43,11 @@ RUN apt-get update && apt-get install -y \
 # Crea directorio de trabajo
 WORKDIR /app
 
-# Copia dependencias
-COPY package*.json ./
-
-# Instala dependencias (incluyendo puppeteer que trae Chromium)
-RUN npm install
-
-# Copia el resto de la app
+# Copia todo el proyecto primero (para que unzip.js y session.zip estén disponibles)
 COPY . .
+
+# Instala dependencias (postinstall puede ejecutarse correctamente)
+RUN npm install
 
 # Expone el puerto (ajusta si tu app usa otro)
 EXPOSE 3000
