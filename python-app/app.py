@@ -51,16 +51,11 @@ index, metadatos = _load_index_and_metadata()
 def embed_text(text: str) -> np.ndarray:
     try:
         emb = genai.embed_content(model=EMBEDDING_MODEL, content=text)
-        print("DEBUG: embed_content response:", emb)  # 🔍 ver toda la respuesta
-
-        # Adaptación: revisa cómo extraer el vector correcto según la respuesta real
-        # Ejemplo genérico:
-        if "embedding" in emb and "values" in emb["embedding"]:
-            vec = np.array(emb["embedding"]["values"], dtype="float32")
-        elif "data" in emb and len(emb["data"]) > 0 and "embedding" in emb["data"][0]:
-            vec = np.array(emb["data"][0]["embedding"]["values"], dtype="float32")
+        # Ahora el vector está directamente en emb["embedding"]
+        if "embedding" in emb and isinstance(emb["embedding"], list):
+            vec = np.array(emb["embedding"], dtype="float32")
         else:
-            raise ValueError("Embedding no contiene 'values'")
+            raise ValueError("Embedding no contiene la lista esperada")
 
         if vec.ndim == 1:
             vec = vec.reshape(1, -1)
