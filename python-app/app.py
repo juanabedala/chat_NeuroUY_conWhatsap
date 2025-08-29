@@ -82,7 +82,12 @@ def search(
         resultados = []
         for i in idxs:
             if 0 <= i < len(metadatos):
-                resultados.append(metadatos[i])
+                elem = metadatos[i]
+                # Convertimos dict a string si es necesario
+                if isinstance(elem, dict):
+                    resultados.append(json.dumps(elem, ensure_ascii=False))
+                else:
+                    resultados.append(elem)
             else:
                 resultados.append(None)
 
