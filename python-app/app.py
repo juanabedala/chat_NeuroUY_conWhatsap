@@ -49,14 +49,18 @@ index, metadatos = _load_index_and_metadata()
 
 # --------- Embeddings con Gemini ---------
 def embed_text(text: str) -> np.ndarray:
-    """
-    Obtiene embedding con Gemini 'models/embedding-001' (dim 768) -> float32 (1,768)
-    """
-    emb = genai.embed_content(model=EMBEDDING_MODEL, content=text)
-    vec = np.array(emb["embedding"]["values"], dtype="float32")
-    if vec.ndim == 1:
-        vec = vec.reshape(1, -1)
-    return vec
+    try:
+        emb = genai.embed_content(model=EMBEDDING_MODEL, content=text)
+        if "embedding" not in emb or "values" not in emb["embedding"]:
+            print("DEBUG: Respuesta de embed_content inesperada:", emb)
+            raise ValueError("Embedding no contiene 'values'")
+        vec = np.array(emb["embedding"]["values"], dtype="float32")
+        if vec.ndim == 1:
+            vec = vec.reshape(1, -1)
+        return vec
+    except Exception as e:
+        print("ERROR embed_text:", str(e))
+        raise
 
 # --------- FastAPI ---------
 app = FastAPI(title="FAISS Microservice", version="1.0.0")
@@ -75,25 +79,20 @@ def reload_index():
         return JSONResponse({"ok": False, "error": str(e)}, status_code=500)
 
 @app.get("/search")
-def search(
-    q: str = Query(..., description="Consulta de texto"),
-    k: int = Query(TOP_K_DEFAULT, ge=1, le=50, description="Cantidad de resultados")
-):
+def search(q: str = Query(...), k: int = Query(TOP_K_DEFAULT, ge=1, le=50)):
     try:
-        q_vec = embed_text(q)  # (1,768) float32
+        q_vec = embed_text(q)
         D, I = index.search(q_vec, k)
-
         idxs = I[0].tolist()
         resultados = []
         for i in idxs:
             if 0 <= i < len(metadatos):
                 elem = metadatos[i]
-                # Devolvemos solo el campo 'texto'
                 resultados.append(elem.get("texto", ""))
             else:
                 resultados.append(None)
-
         return {"ok": True, "resultados": resultados, "distancias": D[0].tolist()}
     except Exception as e:
+        print("ERROR en /search:", str(e))
         return JSONResponse({"ok": False, "error": str(e)}, status_code=500)
 
