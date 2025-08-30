@@ -14,7 +14,7 @@ let qrDataUrl = null;
 const wa = new Client({
     authStrategy: new RemoteAuth({
         clientId: "bot1", // identificador único del bot
-        backupSyncIntervalMs: 30000 // opcional, sincroniza cada 30s
+        backupSyncIntervalMs: 60000 // opcional, sincroniza cada 30s
     }),
     puppeteer: { headless: true, args: ["--no-sandbox", "--disable-setuid-sandbox"] }
 });
