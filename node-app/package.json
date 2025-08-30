@@ -13,7 +13,8 @@
     "node-fetch": "^2.7.0",
     "qrcode": "^1.5.3",
     "whatsapp-web.js": "^1.25.0",
-    "extract-zip": "^2.0.1"
+    "extract-zip": "^2.0.1",
+    "mysql2": "^3.6.0"
   },
   "engines": {
     "node": "18.x"
