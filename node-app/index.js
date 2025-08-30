@@ -12,8 +12,11 @@ const PORT = process.env.PORT || 3000;
 let qrDataUrl = null;
 
 const wa = new Client({
-  authStrategy: new LocalAuth(),
-  puppeteer: { headless: true, args: ["--no-sandbox", "--disable-setuid-sandbox"] }
+    authStrategy: new RemoteAuth({
+        clientId: "bot1", // identificador único del bot
+        backupSyncIntervalMs: 30000 // opcional, sincroniza cada 30s
+    }),
+    puppeteer: { headless: true, args: ["--no-sandbox", "--disable-setuid-sandbox"] }
 });
 
 wa.on("qr", async (qr) => {
@@ -24,6 +27,14 @@ wa.on("qr", async (qr) => {
 wa.on("ready", () => {
   console.log("✅ WhatsApp conectado");
   qrDataUrl = null; // ya no hace falta mostrarlo
+});
+
+wa.on("authenticated", () => {
+    console.log("✅ Sesión autenticada correctamente");
+});
+
+wa.on("auth_failure", msg => {
+    console.error("❌ Error de autenticación:", msg);
 });
 
 wa.on("message", async (msg) => {
@@ -44,17 +55,18 @@ wa.on("message", async (msg) => {
     const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
     const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
     
-    const prompt = `Eres un asistente técnico del viñedo.
-Pregunta del usuario:
-"${pregunta}"
+    const prompt = `Usá el siguiente contexto para responder la pregunta del usuario, si no encuentras la respuesta intenta responderla tú,
+ten en cuenta que somos una empresa de TI que soluciona problemas a la industria y al agro.
 
 Contexto recuperado (relevante, puede tener ruido):
 ${contextoPlano}
 
+Pregunta del usuario:
+"${pregunta}"
+
+
 Instrucciones:
-- Si el contexto responde, úsalo explícitamente citando la idea (sin URLs).
-- Si falta info, indica qué faltaría y responde con la mejor recomendación práctica.
-- Responde en español, claro y conciso, en 5-8 líneas.`;
+- Responde en en el idioma que esta la pregunta, claro y conciso, no mas de 10 líneas.`;
 
 
 /*

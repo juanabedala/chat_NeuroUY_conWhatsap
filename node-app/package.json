@@ -4,7 +4,6 @@
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
-    "postinstall": "node unzip.js",
     "start": "node index.js"
   },
   "dependencies": {
@@ -20,4 +19,3 @@
     "node": "18.x"
   }
 }
-
