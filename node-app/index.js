@@ -1,7 +1,7 @@
 const express = require("express");
 const qrcode = require("qrcode");
 const fetch = require("node-fetch");
-const { Client, LocalAuth } = require("whatsapp-web.js");
+const { Client, RemoteAuth } = require("whatsapp-web.js");
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 require("dotenv").config();
 
