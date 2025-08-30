@@ -32,6 +32,15 @@ const MySQLStore = {
   },
   async remove(clientId) {
     await pool.query("DELETE FROM wa_session WHERE id = ?", [clientId]);
+  },
+
+  // Métodos nuevos requeridos
+  async sessionExists({ session }) {
+    const [rows] = await pool.query("SELECT 1 FROM wa_session WHERE id = ?", [session]);
+    return rows.length > 0;
+  },
+  async deleteSession({ session }) {
+    await pool.query("DELETE FROM wa_session WHERE id = ?", [session]);
   }
 };
 
