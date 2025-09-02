@@ -1,88 +1,139 @@
-require("dotenv").config();
 const express = require("express");
+const qrcode = require("qrcode");
+const fetch = require("node-fetch");
 const { Client, RemoteAuth } = require("whatsapp-web.js");
-const { MySQLStore } = require("wwebjs-mysql");
+const mysql = require("mysql2/promise");
 const { GoogleGenerativeAI } = require("@google/generative-ai");
+require("dotenv").config();
 
 const app = express();
-app.use(express.json());
+const PORT = process.env.PORT || 3000;
 
-// 🚀 Configuración de MySQL
-const store = new MySQLStore({
-  host: "www.neuro.uy", // Cambiar si tu hosting da otra URL interna
+// ---------- MySQL Store para RemoteAuth ----------
+const pool = mysql.createPool({
+  host: "www.neuro.uy",
   user: process.env.MYSQL_USER,
   password: process.env.MYSQL_PASSWORD,
   database: "neuro_bddigital",
 });
 
-// 🚀 Configuración de WhatsApp
+const MySQLStore = {
+  async get(clientId) {
+    console.log("GET", clientId);
+    const [rows] = await pool.query("SELECT data FROM wa_session WHERE id = ?", [clientId]);
+    if (rows.length) return JSON.parse(rows[0].data);
+    return null;
+  },
+  async set(clientId, data) {
+    console.log("SET", clientId);
+    const jsonData = JSON.stringify(data);
+    await pool.query(
+      "INSERT INTO wa_session (id, data) VALUES (?, ?) ON DUPLICATE KEY UPDATE data = ?",
+      [clientId, jsonData, jsonData]
+    );
+  },
+  async remove(clientId) {
+    console.log("REMOVE", clientId);
+    await pool.query("DELETE FROM wa_session WHERE id = ?", [clientId]);
+  },
+
+  // Métodos nuevos requeridos
+  async sessionExists({ session }) {
+    console.log("SESSION EXISTS", session);
+    const [rows] = await pool.query("SELECT 1 FROM wa_session WHERE id = ?", [session]);
+    return rows.length > 0;
+  },
+  async deleteSession({ session }) {
+    console.log("DELETTE SESSION", session);
+    await pool.query("DELETE FROM wa_session WHERE id = ?", [session]);
+  }
+};
+
+// ---------- WhatsApp ----------
+let qrDataUrl = null;
+
 const wa = new Client({
   authStrategy: new RemoteAuth({
     clientId: "bot1",
-    store,
-    backupSyncIntervalMs: 60000,
+    backupSyncIntervalMs: 60000, // 1 minuto mínimo
+    store: MySQLStore
   }),
-  puppeteer: {
-    headless: true,
-    args: ["--no-sandbox", "--disable-setuid-sandbox"],
-  },
+  puppeteer: { headless: true, args: ["--no-sandbox", "--disable-setuid-sandbox"] }
 });
 
-// 🚀 Configuración de Gemini
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
-
-// ✅ Logs de estado
-wa.on("qr", (qr) => {
-  console.log("🔑 Escanea este QR con tu WhatsApp Web:");
-  console.log(qr);
+wa.on("qr", async (qr) => {
+  console.log("QR generado. Escanealo con WhatsApp Business.");
+  qrDataUrl = await qrcode.toDataURL(qr);
 });
 
 wa.on("ready", () => {
-  console.log("✅ WhatsApp conectado y listo para recibir mensajes");
+  console.log("✅ WhatsApp conectado");
+  qrDataUrl = null;
 });
 
 wa.on("authenticated", () => {
-  console.log("🔒 Sesión autenticada correctamente");
+  console.log("✅ Sesión autenticada correctamente");
 });
 
-wa.on("disconnected", (reason) => {
-  console.log("❌ Cliente desconectado:", reason);
+wa.on("auth_failure", msg => {
+  console.error("❌ Error de autenticación:", msg);
 });
 
-// 🚀 Listener de mensajes
 wa.on("message", async (msg) => {
-  console.log("📩 Mensaje recibido:", msg.body);
-
+  console.log("🔹 Mensaje recibido:", msg.body);
   try {
-    // 1️⃣ Enviar mensaje a Gemini
-    const result = await model.generateContent(msg.body);
-    const response = result.response.text();
+    const pregunta = msg.body?.trim();
+    if (!pregunta) return;
 
-    // 2️⃣ Responder en WhatsApp
-    await msg.reply(response);
+    // 1) Buscar contexto en el microservicio Python (FAISS)
+    const pyUrl = process.env.PY_SERVICE_URL?.replace(/\/+$/, "");
+    const url = `${pyUrl}/search?q=${encodeURIComponent(pregunta)}&k=5`;
+    const resp = await fetch(url);
+    const data = await resp.json();
 
-    // 3️⃣ Guardar en MySQL (opcional)
-    store.query(
-      "INSERT INTO wa_logs (user_number, message, response) VALUES (?, ?, ?)",
-      [msg.from, msg.body, response],
-      (err) => {
-        if (err) console.error("❌ Error guardando en MySQL:", err);
-      }
-    );
-  } catch (error) {
-    console.error("⚠️ Error al consultar Gemini:", error);
-    await msg.reply("Lo siento, hubo un error al procesar tu mensaje 🙏");
+    const contexto = Array.isArray(data?.resultados) ? data.resultados : [];
+    const contextoPlano = contexto.map((c, i) => `(${i + 1}) ${c}`).join("\n");
+
+    // 2) Preguntar a Gemini con ese contexto
+    const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+
+    const prompt = `Usá el siguiente contexto para responder la pregunta del usuario, si no encuentras la respuesta intenta responderla tú,
+ten en cuenta que somos una empresa de TI que soluciona problemas a la industria y al agro.
+
+Contexto recuperado (relevante, puede tener ruido):
+${contextoPlano}
+
+Pregunta del usuario:
+"${pregunta}"
+
+
+Instrucciones:
+- Responde en en el idioma que esta la pregunta, claro y conciso, no mas de 10 líneas.`;
+
+    const result = await model.generateContent(prompt);
+    const texto = result?.response?.text?.() || "No tengo respuesta disponible.";
+    await msg.reply(texto);
+  } catch (err) {
+    console.error("Error al procesar mensaje:", err);
+    await msg.reply("⚠️ Ocurrió un error al procesar tu consulta.");
   }
 });
 
-// 🚀 Inicializar cliente WhatsApp
-wa.initialize();
-
-// 🚀 Servidor Express
+// ---------- Express ----------
 app.get("/", (req, res) => {
-  res.send("✅ Bot de WhatsApp corriendo en Railway con Gemini");
+  if (qrDataUrl) {
+    res.send(`<h2>Escaneá este QR con WhatsApp Business</h2><img src="${qrDataUrl}" style="max-width:340px;">`);
+  } else {
+    res.send("Bot WhatsApp activo ✅ (si no estás conectado aún, espera a que se genere el QR)");
+  }
 });
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`🚀 Server escuchando en puerto ${PORT}`));
+app.get("/health", (_req, res) => res.json({ ok: true }));
+
+app.listen(PORT, () => {
+  console.log(`🌐 Node escuchando en :${PORT}`);
+});
+
+wa.initialize();
+
