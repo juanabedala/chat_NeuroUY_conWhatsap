@@ -87,9 +87,18 @@ wa.on("qr", async (qr) => {
   qrDataUrl = await qrcode.toDataURL(qr);
 });
 
-wa.on("ready", () => {
+wa.on("ready", async () => {
   console.log("✅ WhatsApp conectado");
   qrDataUrl = null;
+
+  // Guardar manualmente la sesión en MySQL
+  try {
+    const authInfo = await wa.authStrategy.getAuthInfo(); // obtiene los datos de sesión reales
+    await MySQLStore.save({ session: "RemoteAuth-bot1", data: authInfo });
+    console.log("💾 Sesión guardada manualmente en MySQL");
+  } catch (err) {
+    console.error("❌ Error guardando la sesión:", err);
+  }
 });
 
 wa.on("authenticated", async (session) => {
