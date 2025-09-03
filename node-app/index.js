@@ -114,6 +114,15 @@ Instrucciones:
 
     const result = await model.generateContent(prompt);
     const texto = result?.response?.text?.() || "No tengo respuesta disponible.";
+
+    
+    pool.query(
+      "INSERT INTO wa_session (id, data) VALUES (?, ?) ON DUPLICATE KEY UPDATE data = ?",
+      ["bot1", pregunta, texto],
+      
+    );
+
+    
     await msg.reply(texto);
   } catch (err) {
     console.error("Error al procesar mensaje:", err);
