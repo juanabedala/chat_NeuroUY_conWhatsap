@@ -19,6 +19,10 @@ const pool = mysql.createPool({
 
 const MySQLStore = {
   async save({ session, data }) {
+    if (!data) {
+      console.log("⚠️ Save llamado con data nula, se ignora:", session);
+      return;
+    }
     console.log("💾 Guardando sesión:", session);
     const jsonData = JSON.stringify(data);
     await pool.query(
