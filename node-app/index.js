@@ -21,6 +21,7 @@ const MySQLStore = {
   async save({ session, data }) {
     console.log("DEBUG Save llamado con:", { session, data });
     if (!data) return; // Ignora los intentos con null
+
     const jsonData = JSON.stringify(data);
     await pool.query(
       "INSERT INTO wa_session (id, data) VALUES (?, ?) ON DUPLICATE KEY UPDATE data = ?",
@@ -29,19 +30,16 @@ const MySQLStore = {
     console.log("💾 Sesión guardada:", session);
   },
 
-  async load({ session }) {
+  async get(session) {   // 👈 renombrado de load() a get()
     const [rows] = await pool.query("SELECT data FROM wa_session WHERE id = ?", [session]);
-    if (rows.length && rows[0].data) return JSON.parse(rows[0].data);
+    if (rows.length && rows[0].data) {
+      return JSON.parse(rows[0].data);
+    }
     return null;
   },
 
-  async remove({ session }) {
+  async remove(session) {   // 👈 recibe session directo
     await pool.query("DELETE FROM wa_session WHERE id = ?", [session]);
-  },
-
-  async sessionExists({ session }) {
-    const [rows] = await pool.query("SELECT 1 FROM wa_session WHERE id = ?", [session]);
-    return rows.length > 0;
   }
 };
 
@@ -51,7 +49,7 @@ let qrDataUrl = null;
 const wa = new Client({
   authStrategy: new RemoteAuth({
     clientId: "bot1",
-    backupSyncIntervalMs: 60000, // 1 minuto mínimo
+    backupSyncIntervalMs: 60000, 
     store: MySQLStore
   }),
   puppeteer: { headless: true, args: ["--no-sandbox", "--disable-setuid-sandbox"] }
@@ -69,12 +67,13 @@ wa.on("ready", () => {
 
 wa.on("authenticated", async (session) => {
   console.log("✅ Sesión autenticada correctamente");
-
+  /*
   // Guardar manualmente en la base
   if (session) {
-    await MySQLStore.save({ session: "RemoteAuth-bot1", data: session });
+    await MySQLStore.save({ session: "bot1", data: session });
     console.log("💾 Sesión guardada manualmente en la base");
   }
+  */
 });
 
 wa.on("auth_failure", msg => {
