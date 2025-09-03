@@ -18,34 +18,31 @@ const pool = mysql.createPool({
 });
 
 const MySQLStore = {
-  async get(clientId) {
-    console.log("GET", clientId);
-    const [rows] = await pool.query("SELECT data FROM wa_session WHERE id = ?", [clientId]);
-    if (rows.length) return JSON.parse(rows[0].data);
-    return null;
-  },
-  async set(clientId, data) {
-    console.log("SET", clientId);
+  async save({ session, data }) {
+    console.log("💾 Guardando sesión:", session);
     const jsonData = JSON.stringify(data);
     await pool.query(
       "INSERT INTO wa_session (id, data) VALUES (?, ?) ON DUPLICATE KEY UPDATE data = ?",
-      [clientId, jsonData, jsonData]
+      [session, jsonData, jsonData]
     );
   },
-  async remove(clientId) {
-    console.log("REMOVE", clientId);
-    await pool.query("DELETE FROM wa_session WHERE id = ?", [clientId]);
+
+  async load({ session }) {
+    console.log("Select:", session);
+    const [rows] = await pool.query("SELECT data FROM wa_session WHERE id = ?", [session]);
+    if (rows.length) return JSON.parse(rows[0].data);
+    return null;
   },
 
-  // Métodos nuevos requeridos
+  async remove({ session }) {
+    console.log("remove:", session);
+    await pool.query("DELETE FROM wa_session WHERE id = ?", [session]);
+  },
+
   async sessionExists({ session }) {
-    console.log("SESSION EXISTS", session);
+    console.log("Existe:", session);
     const [rows] = await pool.query("SELECT 1 FROM wa_session WHERE id = ?", [session]);
     return rows.length > 0;
-  },
-  async deleteSession({ session }) {
-    console.log("DELETTE SESSION", session);
-    await pool.query("DELETE FROM wa_session WHERE id = ?", [session]);
   }
 };
 
