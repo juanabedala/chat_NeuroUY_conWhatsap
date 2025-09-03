@@ -30,7 +30,7 @@ const MySQLStore = {
     console.log("💾 Sesión guardada:", session);
   },
 
-  async get(session) {   // 👈 renombrado de load() a get()
+  async get(session) {
     const [rows] = await pool.query("SELECT data FROM wa_session WHERE id = ?", [session]);
     if (rows.length && rows[0].data) {
       return JSON.parse(rows[0].data);
@@ -38,8 +38,13 @@ const MySQLStore = {
     return null;
   },
 
-  async remove(session) {   // 👈 recibe session directo
+  async remove(session) {
     await pool.query("DELETE FROM wa_session WHERE id = ?", [session]);
+  },
+
+  async sessionExists({ session }) {
+    const [rows] = await pool.query("SELECT 1 FROM wa_session WHERE id = ?", [session]);
+    return rows.length > 0;
   }
 };
 
