@@ -19,32 +19,26 @@ const pool = mysql.createPool({
 
 const MySQLStore = {
   async save({ session, data }) {
-    if (!data) {
-      console.log("⚠️ Save llamado con data nula, se ignora:", session);
-      return;
-    }
-    console.log("💾 Guardando sesión:", session);
+    if (!data) return; // Ignora los intentos con null
     const jsonData = JSON.stringify(data);
     await pool.query(
       "INSERT INTO wa_session (id, data) VALUES (?, ?) ON DUPLICATE KEY UPDATE data = ?",
       [session, jsonData, jsonData]
     );
+    console.log("💾 Sesión guardada:", session);
   },
 
   async load({ session }) {
-    console.log("Select:", session);
     const [rows] = await pool.query("SELECT data FROM wa_session WHERE id = ?", [session]);
-    if (rows.length) return JSON.parse(rows[0].data);
+    if (rows.length && rows[0].data) return JSON.parse(rows[0].data);
     return null;
   },
 
   async remove({ session }) {
-    console.log("remove:", session);
     await pool.query("DELETE FROM wa_session WHERE id = ?", [session]);
   },
 
   async sessionExists({ session }) {
-    console.log("Existe:", session);
     const [rows] = await pool.query("SELECT 1 FROM wa_session WHERE id = ?", [session]);
     return rows.length > 0;
   }
