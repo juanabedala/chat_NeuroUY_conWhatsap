@@ -19,6 +19,7 @@ const pool = mysql.createPool({
 
 const MySQLStore = {
   async save({ session, data }) {
+    console.log("DEBUG Save llamado con:", { session, data });
     if (!data) return; // Ignora los intentos con null
     const jsonData = JSON.stringify(data);
     await pool.query(
