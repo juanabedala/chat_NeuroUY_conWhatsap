@@ -66,8 +66,14 @@ wa.on("ready", () => {
   qrDataUrl = null;
 });
 
-wa.on("authenticated", () => {
+wa.on("authenticated", async (session) => {
   console.log("✅ Sesión autenticada correctamente");
+
+  // Guardar manualmente en la base
+  if (session) {
+    await MySQLStore.save({ session: "RemoteAuth-bot1", data: session });
+    console.log("💾 Sesión guardada manualmente en la base");
+  }
 });
 
 wa.on("auth_failure", msg => {
