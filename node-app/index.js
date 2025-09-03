@@ -90,26 +90,25 @@ wa.on("qr", async (qr) => {
 wa.on("ready", async () => {
   console.log("✅ WhatsApp conectado");
   qrDataUrl = null;
+ 
+});
 
-  // Guardar manualmente la sesión en MySQL
+wa.on("authenticated", async () => {
+  console.log("✅ Sesión autenticada correctamente");
+
   try {
-    const authInfo = await wa.authStrategy.getAuthInfo(); // obtiene los datos de sesión reales
-    await MySQLStore.save({ session: "RemoteAuth-bot1", data: authInfo });
-    console.log("💾 Sesión guardada manualmente en MySQL");
+    // data real de sesión
+    const authInfo = wa.authStrategy?.store?.sessions?.get("RemoteAuth-bot1");
+
+    if (authInfo) {
+      await MySQLStore.save({ session: "RemoteAuth-bot1", data: authInfo });
+      console.log("💾 Sesión guardada manualmente en MySQL");
+    } else {
+      console.log("⚠️ No se encontró authInfo, aún no está lista");
+    }
   } catch (err) {
     console.error("❌ Error guardando la sesión:", err);
   }
-});
-
-wa.on("authenticated", async (session) => {
-  console.log("✅ Sesión autenticada correctamente");
-  /*
-  // Guardar manualmente en la base
-  if (session) {
-    await MySQLStore.save({ session: "RemoteAuth-bot1", data: session });
-    console.log("💾 Sesión guardada manualmente en la base");
-  }
-  */
 });
 
 wa.on("auth_failure", msg => {
