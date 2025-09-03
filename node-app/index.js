@@ -18,10 +18,10 @@ const pool = mysql.createPool({
 });
 
 const MySQLStore = {
+  // Guardar sesión
   async save({ session, data }) {
     console.log("DEBUG Save llamado con:", { session, data });
-    if (!data) return; // Ignora los intentos con null
-
+    if (!data) return; // Ignora llamados sin data
     const jsonData = JSON.stringify(data);
     await pool.query(
       "INSERT INTO wa_session (id, data) VALUES (?, ?) ON DUPLICATE KEY UPDATE data = ?",
@@ -30,21 +30,43 @@ const MySQLStore = {
     console.log("💾 Sesión guardada:", session);
   },
 
-  async get(session) {
-    const [rows] = await pool.query("SELECT data FROM wa_session WHERE id = ?", [session]);
+  // Cargar sesión
+  async load({ session }) {
+    const [rows] = await pool.query(
+      "SELECT data FROM wa_session WHERE id = ?",
+      [session]
+    );
     if (rows.length && rows[0].data) {
-      return JSON.parse(rows[0].data);
+      try {
+        return JSON.parse(rows[0].data);
+      } catch (e) {
+        console.error("Error parseando sesión:", e);
+      }
     }
     return null;
   },
 
-  async remove(session) {
-    await pool.query("DELETE FROM wa_session WHERE id = ?", [session]);
+  // Eliminar sesión
+  async remove({ session }) {
+    await pool.query(
+      "DELETE FROM wa_session WHERE id = ?",
+      [session]
+    );
+    console.log("🗑️ Sesión eliminada:", session);
   },
 
+  // Verifica si la sesión existe
   async sessionExists({ session }) {
-    const [rows] = await pool.query("SELECT 1 FROM wa_session WHERE id = ?", [session]);
+    const [rows] = await pool.query(
+      "SELECT 1 FROM wa_session WHERE id = ?",
+      [session]
+    );
     return rows.length > 0;
+  },
+
+  // Alias para RemoteAuth
+  async deleteSession({ session }) {
+    return this.remove({ session });
   }
 };
 
@@ -75,7 +97,7 @@ wa.on("authenticated", async (session) => {
   /*
   // Guardar manualmente en la base
   if (session) {
-    await MySQLStore.save({ session: "bot1", data: session });
+    await MySQLStore.save({ session: "RemoteAuth-bot1", data: session });
     console.log("💾 Sesión guardada manualmente en la base");
   }
   */
