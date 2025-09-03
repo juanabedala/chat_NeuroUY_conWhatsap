@@ -117,7 +117,7 @@ Instrucciones:
 
     
     pool.query(
-      "INSERT INTO wa_session (id, data) VALUES (?, ?) ON DUPLICATE KEY UPDATE data = ?",
+      "INSERT INTO wa_logs (user_number, message, response) VALUES (?, ?, ?)",
       ["bot1", pregunta, texto],
       
     );
