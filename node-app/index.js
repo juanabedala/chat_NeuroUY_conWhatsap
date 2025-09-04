@@ -17,24 +17,22 @@ const pool = mysql.createPool({
   database: "neuro_bddigital",
 });
 
-// La clase completa de MySQLStore
-class MySQLStore {
-  constructor(pool) {
-    this.pool = pool;
-  }
-
-  // Comprueba si la sesión existe en la base de datos
-  async sessionExists(session) {
-    const [rows] = await this.pool.query(
-      "SELECT 1 FROM wa_session WHERE id = ?",
-      [session]
+const MySQLStore = {
+  // Guardar sesión
+  async save({ session, data }) {
+    console.log("DEBUG Save llamado con:", { session, data });
+    if (!data) return; // Ignora llamados sin data
+    const jsonData = JSON.stringify(data);
+    await pool.query(
+      "INSERT INTO wa_session (id, data) VALUES (?, ?) ON DUPLICATE KEY UPDATE data = ?",
+      [session, jsonData, jsonData]
     );
-    return rows.length > 0;
-  }
+    console.log("💾 Sesión guardada:", session);
+  },
 
-  // Carga la sesión desde la base de datos
-  async restore(session) {
-    const [rows] = await this.pool.query(
+  // Cargar sesión
+  async load({ session }) {
+    const [rows] = await pool.query(
       "SELECT data FROM wa_session WHERE id = ?",
       [session]
     );
@@ -42,47 +40,46 @@ class MySQLStore {
       try {
         return JSON.parse(rows[0].data);
       } catch (e) {
-        console.error("Error parseando la sesión:", e);
+        console.error("Error parseando sesión:", e);
       }
     }
     return null;
-  }
+  },
 
-  // Guarda o actualiza la sesión
-  async save(session, data) {
-    console.log("DEBUG save llamado con:", { session });
-    const jsonData = JSON.stringify(data);
-    await this.pool.query(
-      "INSERT INTO wa_session (id, data) VALUES (?, ?) ON DUPLICATE KEY UPDATE data = ?",
-      [session, jsonData, jsonData]
+  // Eliminar sesión
+  async remove({ session }) {
+    await pool.query(
+      "DELETE FROM wa_session WHERE id = ?",
+      [session]
     );
-    console.log("💾 Sesión guardada:", session);
-  }
-
-  // Elimina la sesión de la base de datos
-  async delete(session) {
-    await this.pool.query("DELETE FROM wa_session WHERE id = ?", [session]);
     console.log("🗑️ Sesión eliminada:", session);
-  }
-}
+  },
 
+  // Verifica si la sesión existe
+  async sessionExists({ session }) {
+    const [rows] = await pool.query(
+      "SELECT 1 FROM wa_session WHERE id = ?",
+      [session]
+    );
+    return rows.length > 0;
+  },
+
+  // Alias para RemoteAuth
+  async deleteSession({ session }) {
+    return this.remove({ session });
+  }
+};
 
 // ---------- WhatsApp ----------
 let qrDataUrl = null;
 
-// Crea una instancia de tu Store
-const store = new MySQLStore(pool);
-
 const wa = new Client({
   authStrategy: new RemoteAuth({
     clientId: "bot1",
-    backupSyncIntervalMs: 60000,
-    store: store, // Pasa la instancia de la clase
+    backupSyncIntervalMs: 60000, 
+    store: MySQLStore
   }),
-  puppeteer: {
-    headless: true,
-    args: ["--no-sandbox", "--disable-setuid-sandbox"],
-  },
+  puppeteer: { headless: true, args: ["--no-sandbox", "--disable-setuid-sandbox"] }
 });
 
 wa.on("qr", async (qr) => {
@@ -99,7 +96,19 @@ wa.on("ready", async () => {
 wa.on("authenticated", async () => {
   console.log("✅ Sesión autenticada correctamente");
 
-  
+  try {
+    // data real de sesión
+    const authInfo = wa.authStrategy?.store?.sessions?.get("RemoteAuth-bot1");
+
+    if (authInfo) {
+      await MySQLStore.save({ session: "RemoteAuth-bot1", data: authInfo });
+      console.log("💾 Sesión guardada manualmente en MySQL");
+    } else {
+      console.log("⚠️ No se encontró authInfo, aún no está lista");
+    }
+  } catch (err) {
+    console.error("❌ Error guardando la sesión:", err);
+  }
 });
 
 wa.on("auth_failure", msg => {
