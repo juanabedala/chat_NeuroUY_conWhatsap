@@ -17,9 +17,19 @@ const pool = mysql.createPool({
   database: "neuro_bddigital",
 });
 
+// La clase completa de MySQLStore
 class MySQLStore {
   constructor(pool) {
     this.pool = pool;
+  }
+
+  // Comprueba si la sesión existe en la base de datos
+  async sessionExists(session) {
+    const [rows] = await this.pool.query(
+      "SELECT 1 FROM wa_session WHERE id = ?",
+      [session]
+    );
+    return rows.length > 0;
   }
 
   // Carga la sesión desde la base de datos
@@ -40,7 +50,7 @@ class MySQLStore {
 
   // Guarda o actualiza la sesión
   async save(session, data) {
-    console.log("DEBUG save llamado con:", { session,data });
+    console.log("DEBUG save llamado con:", { session });
     const jsonData = JSON.stringify(data);
     await this.pool.query(
       "INSERT INTO wa_session (id, data) VALUES (?, ?) ON DUPLICATE KEY UPDATE data = ?",
