@@ -1,10 +1,12 @@
-const express = require("express");
-const qrcode = require("qrcode");
-const fetch = require("node-fetch");
-const { Client, RemoteAuth } = require("whatsapp-web.js");
-const mysql = require("mysql2/promise");
-const { GoogleGenerativeAI } = require("@google/generative-ai");
-require("dotenv").config();
+import express from "express";
+import qrcode from "qrcode";
+import fetch from "node-fetch";
+import { Client, RemoteAuth } from "whatsapp-web.js";
+import mysql from "mysql2/promise";
+import { GoogleGenerativeAI } from "@google/generative-ai";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
