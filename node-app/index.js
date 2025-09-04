@@ -1,12 +1,10 @@
-import express from "express";
-import qrcode from "qrcode";
-import fetch from "node-fetch";
-import { Client, RemoteAuth } from "whatsapp-web.js";
-import mysql from "mysql2/promise";
-import { GoogleGenerativeAI } from "@google/generative-ai";
-import dotenv from "dotenv";
-
-dotenv.config();
+const express = require("express");
+const qrcode = require("qrcode");
+const fetch = require("node-fetch");
+const { Client, RemoteAuth } = require("whatsapp-web.js");
+const mysql = require("mysql2/promise");
+const { GoogleGenerativeAI } = require("@google/generative-ai");
+require("dotenv").config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -25,60 +23,46 @@ class MySQLStore {
     this.pool = pool;
   }
 
-  // Check if a session exists in the database
+  // Comprueba si la sesión existe en la base de datos
   async sessionExists(session) {
-    try {
-      // Corrected query: using '?' placeholder for the session ID
-      const [rows] = await this.pool.query(
-        "SELECT 1 FROM wa_session WHERE id = ?",
-        [session]
-      );
-      return rows.length > 0;
-    } catch (error) {
-      console.error("Error in sessionExists:", error);
-      return false; // Return false on error
-    }
+    const [rows] = await this.pool.query(
+      "SELECT 1 FROM wa_session WHERE id = ?",
+      [session]
+    );
+    return rows.length > 0;
   }
 
-  // Restore the session data from the database
+  // Carga la sesión desde la base de datos
   async restore(session) {
-    try {
-      const [rows] = await this.pool.query(
-        "SELECT data FROM wa_session WHERE id = ?",
-        [session]
-      );
-      if (rows.length && rows[0].data) {
+    const [rows] = await this.pool.query(
+      "SELECT data FROM wa_session WHERE id = ?",
+      [session]
+    );
+    if (rows.length && rows[0].data) {
+      try {
         return JSON.parse(rows[0].data);
+      } catch (e) {
+        console.error("Error parseando la sesión:", e);
       }
-      return null;
-    } catch (error) {
-      console.error("Error in restore:", error);
-      return null;
     }
+    return null;
   }
 
-  // Save or update the session data
+  // Guarda o actualiza la sesión
   async save(session, data) {
-    try {
-      const jsonData = JSON.stringify(data);
-      await this.pool.query(
-        "INSERT INTO wa_session (id, data) VALUES (?, ?) ON DUPLICATE KEY UPDATE data = ?",
-        [session, jsonData, jsonData]
-      );
-      console.log("💾 Session saved:", session);
-    } catch (error) {
-      console.error("Error in save:", error);
-    }
+    console.log("DEBUG save llamado con:", { session });
+    const jsonData = JSON.stringify(data);
+    await this.pool.query(
+      "INSERT INTO wa_session (id, data) VALUES (?, ?) ON DUPLICATE KEY UPDATE data = ?",
+      [session, jsonData, jsonData]
+    );
+    console.log("💾 Sesión guardada:", session);
   }
 
-  // Delete the session from the database
+  // Elimina la sesión de la base de datos
   async delete(session) {
-    try {
-      await this.pool.query("DELETE FROM wa_session WHERE id = ?", [session]);
-      console.log("🗑️ Session deleted:", session);
-    } catch (error) {
-      console.error("Error in delete:", error);
-    }
+    await this.pool.query("DELETE FROM wa_session WHERE id = ?", [session]);
+    console.log("🗑️ Sesión eliminada:", session);
   }
 }
 
