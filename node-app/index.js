@@ -23,46 +23,60 @@ class MySQLStore {
     this.pool = pool;
   }
 
-  // Comprueba si la sesión existe en la base de datos
+  // Check if a session exists in the database
   async sessionExists(session) {
-    const [rows] = await this.pool.query(
-      "SELECT 1 FROM wa_session WHERE id = ?",
-      [session]
-    );
-    return rows.length > 0;
-  }
-
-  // Carga la sesión desde la base de datos
-  async restore(session) {
-    const [rows] = await this.pool.query(
-      "SELECT data FROM wa_session WHERE id = ?",
-      [session]
-    );
-    if (rows.length && rows[0].data) {
-      try {
-        return JSON.parse(rows[0].data);
-      } catch (e) {
-        console.error("Error parseando la sesión:", e);
-      }
+    try {
+      // Corrected query: using '?' placeholder for the session ID
+      const [rows] = await this.pool.query(
+        "SELECT 1 FROM wa_session WHERE id = ?",
+        [session]
+      );
+      return rows.length > 0;
+    } catch (error) {
+      console.error("Error in sessionExists:", error);
+      return false; // Return false on error
     }
-    return null;
   }
 
-  // Guarda o actualiza la sesión
+  // Restore the session data from the database
+  async restore(session) {
+    try {
+      const [rows] = await this.pool.query(
+        "SELECT data FROM wa_session WHERE id = ?",
+        [session]
+      );
+      if (rows.length && rows[0].data) {
+        return JSON.parse(rows[0].data);
+      }
+      return null;
+    } catch (error) {
+      console.error("Error in restore:", error);
+      return null;
+    }
+  }
+
+  // Save or update the session data
   async save(session, data) {
-    console.log("DEBUG save llamado con:", { session });
-    const jsonData = JSON.stringify(data);
-    await this.pool.query(
-      "INSERT INTO wa_session (id, data) VALUES (?, ?) ON DUPLICATE KEY UPDATE data = ?",
-      [session, jsonData, jsonData]
-    );
-    console.log("💾 Sesión guardada:", session);
+    try {
+      const jsonData = JSON.stringify(data);
+      await this.pool.query(
+        "INSERT INTO wa_session (id, data) VALUES (?, ?) ON DUPLICATE KEY UPDATE data = ?",
+        [session, jsonData, jsonData]
+      );
+      console.log("💾 Session saved:", session);
+    } catch (error) {
+      console.error("Error in save:", error);
+    }
   }
 
-  // Elimina la sesión de la base de datos
+  // Delete the session from the database
   async delete(session) {
-    await this.pool.query("DELETE FROM wa_session WHERE id = ?", [session]);
-    console.log("🗑️ Sesión eliminada:", session);
+    try {
+      await this.pool.query("DELETE FROM wa_session WHERE id = ?", [session]);
+      console.log("🗑️ Session deleted:", session);
+    } catch (error) {
+      console.error("Error in delete:", error);
+    }
   }
 }
 
