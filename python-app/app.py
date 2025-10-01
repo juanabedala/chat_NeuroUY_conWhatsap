@@ -5,24 +5,20 @@ import faiss
 from fastapi import FastAPI, Query
 from fastapi.responses import JSONResponse
 from dotenv import load_dotenv
-import google.generativeai as genai
+from sentence_transformers import SentenceTransformer
 
 # --------- Configuración ---------
 load_dotenv()
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 TOP_K_DEFAULT = int(os.getenv("TOP_K", "5"))
 INDEX_FILE = os.getenv("INDEX_FILE", os.path.join(BASE_DIR, "vector_index.faiss"))
 METADATA_FILE = os.getenv("METADATA_FILE", os.path.join(BASE_DIR, "metadata.json"))
 
-# Embedding model
-EMBEDDING_MODEL = "models/embedding-001"
-
-if not GEMINI_API_KEY:
-    raise RuntimeError("Falta GEMINI_API_KEY en variables de entorno.")
-
-genai.configure(api_key=GEMINI_API_KEY)
+# --------- Modelo de embeddings local ---------
+print("Cargando modelo de embeddings local (all-MiniLM-L6-v2)...")
+embedding_model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
+print("✅ Modelo de embeddings cargado")
 
 # --------- Carga de índice y metadata ---------
 def _load_index_and_metadata():
@@ -38,29 +34,18 @@ def _load_index_and_metadata():
     index = faiss.read_index(INDEX_FILE)
 
     with open(METADATA_FILE, "r", encoding="utf-8") as f:
-        meta_json = json.load(f)
-
-    # siempre tomamos la lista de metadatos
-    metadatos = meta_json.get("metadatos", [])
+        # metadata.json ahora es una lista de objetos [{id, file, text, chunk_index}]
+        metadatos = json.load(f)
 
     return index, metadatos
 
 index, metadatos = _load_index_and_metadata()
 
-# --------- Embeddings con Gemini ---------
+# --------- Embeddings con modelo local ---------
 def embed_text(text: str) -> np.ndarray:
     try:
-        emb = genai.embed_content(model=EMBEDDING_MODEL, content=text)
-        # Ahora el vector está directamente en emb["embedding"]
-        if "embedding" in emb and isinstance(emb["embedding"], list):
-            vec = np.array(emb["embedding"], dtype="float32")
-        else:
-            raise ValueError("Embedding no contiene la lista esperada")
-
-        if vec.ndim == 1:
-            vec = vec.reshape(1, -1)
-        return vec
-
+        vec = embedding_model.encode([text], convert_to_numpy=True, normalize_embeddings=True)
+        return vec.astype("float32")
     except Exception as e:
         print("ERROR embed_text:", str(e))
         raise
@@ -91,11 +76,14 @@ def search(q: str = Query(...), k: int = Query(TOP_K_DEFAULT, ge=1, le=50)):
         for i in idxs:
             if 0 <= i < len(metadatos):
                 elem = metadatos[i]
-                resultados.append(elem.get("texto", ""))
+                resultados.append({
+                    "file": elem.get("file", ""),
+                    "text": elem.get("text", ""),
+                    "chunk_index": elem.get("chunk_index", None)
+                })
             else:
                 resultados.append(None)
         return {"ok": True, "resultados": resultados, "distancias": D[0].tolist()}
     except Exception as e:
         print("ERROR en /search:", str(e))
         return JSONResponse({"ok": False, "error": str(e)}, status_code=500)
-

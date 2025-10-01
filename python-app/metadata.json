@@ -1,217 +1,338 @@
-{
-  "metadatos": [
-    {
-      "id": "Documento para CHAT bot de pagina web_0",
-      "texto": "Nuestra empresa ofrece soluciones integrales en tecnología, abarcando múltiples áreas \npara cubrir las necesidades de nuestros clientes en distintos sectores. 1. Desarrollo de Software \nContamos con un equipo especializado en el desarrollo de software a medida, adaptado a \ndistintos rubros e industrias. Creamos aplicaciones web, móviles y de escritorio, sistemas de \ngestión, plataformas personalizadas y soluciones escalables que se ajustan a los \nrequerimientos específicos de cada cliente. 2.",
-      "documento": "Documento para CHAT bot de pagina web"
-    },
-    {
-      "id": "Documento para CHAT bot de pagina web_1",
-      "texto": "Inteligencia Artificial y Análisis de Datos \nOfrecemos servicios basados en inteligencia artificial para analizar datos estructurados y no \nestructurados, generar reportes automatizados, detectar patrones y predecir \ncomportamientos. Desarrollamos modelos de visión por computadora para la detección y \nclasificación de objetos en imágenes y videos en tiempo real, aplicables a seguridad, \nindustria, agricultura, salud, logística y más. 3.",
-      "documento": "Documento para CHAT bot de pagina web"
-    },
-    {
-      "id": "Documento para CHAT bot de pagina web_2",
-      "texto": "Desarrollo de Dispositivos IoT \nDiseñamos y desarrollamos soluciones de hardware y firmware para Internet de las Cosas \n(IoT). Integramos sensores, módulos GPS, sistemas de comunicación y actuadores para \naplicaciones como monitoreo ambiental, trazabilidad, control industrial, automatización del \nhogar y gestión remota de dispositivos. Nuestros dispositivos pueden operar de forma \nautónoma o conectados a redes (Wi-Fi, GSM, LoRa, etc.). 4.",
-      "documento": "Documento para CHAT bot de pagina web"
-    },
-    {
-      "id": "Documento para CHAT bot de pagina web_3",
-      "texto": "Plataforma de Gestión IoT \nDisponemos de una plataforma propia para la gestión integral de dispositivos IoT, donde los \nusuarios pueden visualizar datos en tiempo real, configurar alertas, controlar dispositivos \nremotamente y acceder a reportes históricos. La plataforma está diseñada para ser segura, \nescalable y multiusuario, facilitando la supervisión y control de proyectos IoT desde \ncualquier lugar. 5.",
-      "documento": "Documento para CHAT bot de pagina web"
-    },
-    {
-      "id": "Documento para CHAT bot de pagina web_4",
-      "texto": "Digitalización en lenguaje natural \nLa digitalización en lenguaje natural es el proceso de tomar frases humanas (texto o voz) y \nconvertirlas automáticamente en datos estructurados, listos para sistemas digitales. Desarrollamos un agente de IA conversacional que interpreta el lenguaje natural y lo \ntransforma en datos estructurados y utilizables por sistemas informáticos. 1.",
-      "documento": "Documento para CHAT bot de pagina web"
-    },
-    {
-      "id": "Documento para CHAT bot de pagina web_5",
-      "texto": "Desarrollo de Software (ampliado) \nNos especializamos en el desarrollo de software a medida para resolver necesidades \nespecíficas de empresas, organizaciones e instituciones. Diseñamos y construimos \nsistemas robustos, escalables y eficientes, tanto para entornos web como móviles y de \nescritorio.",
-      "documento": "Documento para CHAT bot de pagina web"
-    },
-    {
-      "id": "Documento para CHAT bot de pagina web_6",
-      "texto": "Trabajamos en distintas áreas del desarrollo, incluyendo: \n●​ Aplicaciones web con paneles de administración, gestión de usuarios, integración \ncon bases de datos, dashboards interactivos y módulos personalizados.​\n \n●​ Aplicaciones móviles nativas o híbridas (Android/iOS) con funciones como \ngeolocalización, notificaciones push, registro de datos offline y sincronización en la \nnube.​\n \n●​ Software de escritorio para uso industrial, institucional o científico, con interfaces \nintuitivas y acceso local o en red.​\n \n●​ Sistemas embebidos para integración con hardware personalizado \n(microcontroladores, PLC, dispositivos IoT).​\n \n●​ Integraciones API con sistemas externos, pasarelas de pago, servicios en la nube o \nplataformas de terceros.​\n \nImplementamos soluciones en diversos lenguajes y entornos tecnológicos como Python, \nJavaScript (Node.js, React, Vue), Java, C#, PHP, MySQL, PostgreSQL, Firebase, entre \notros.",
-      "documento": "Documento para CHAT bot de pagina web"
-    },
-    {
-      "id": "Documento para CHAT bot de pagina web_7",
-      "texto": "Adaptamos nuestras herramientas al tipo de proyecto y a la infraestructura del cliente. Utilizamos metodologías ágiles (Scrum/Kanban) para garantizar entregas parciales, ciclos \niterativos, revisión continua con el cliente y adaptación a cambios. Brindamos \nmantenimiento, soporte técnico y actualizaciones una vez finalizado el desarrollo.",
-      "documento": "Documento para CHAT bot de pagina web"
-    },
-    {
-      "id": "Documento para CHAT bot de pagina web_8",
-      "texto": "Cada proyecto de software parte de un análisis detallado de requerimientos, lo que nos \npermite entregar soluciones personalizadas, eficientes y alineadas con los objetivos del \ncliente. Nuestro compromiso es desarrollar herramientas digitales que generen valor real, \noptimicen procesos y potencien el crecimiento del negocio. 2.",
-      "documento": "Documento para CHAT bot de pagina web"
-    },
-    {
-      "id": "Documento para CHAT bot de pagina web_9",
-      "texto": "Inteligencia Artificial y Análisis de Datos (versión ampliada) \nEn nuestra empresa ofrecemos soluciones basadas en Inteligencia Artificial (IA) y análisis \navanzado de datos para ayudar a empresas y organizaciones a transformar información en \nconocimiento útil y accionable.",
-      "documento": "Documento para CHAT bot de pagina web"
-    },
-    {
-      "id": "Documento para CHAT bot de pagina web_10",
-      "texto": "Desarrollamos modelos personalizados de aprendizaje \nautomático (machine learning) y aprendizaje profundo (deep learning), adaptados a \nproblemas reales en distintos rubros, como industria, salud, seguridad, logística, agricultura, \ny más. a) Análisis de Datos \nTrabajamos con datos estructurados (bases de datos, hojas de cálculo) y no estructurados \n(texto libre, imágenes, señales, audio o video).",
-      "documento": "Documento para CHAT bot de pagina web"
-    },
-    {
-      "id": "Documento para CHAT bot de pagina web_11",
-      "texto": "Ofrecemos los siguientes servicios: \n●​ Procesamiento y limpieza de datos: tratamos datos incompletos, duplicados, \nruidosos o dispersos.​\n \n●​ Análisis exploratorio: generación de estadísticas, visualización de tendencias, \nidentificación de correlaciones.​\n \n●​ Modelado predictivo: predicción de comportamientos, valores futuros o eventos \nutilizando modelos supervisados y no supervisados.​\n \n●​ Segmentación de clientes: agrupación inteligente de usuarios o productos según \ncaracterísticas similares.​\n \n●​ Automatización de reportes: generación dinámica de informes con dashboards \ninteractivos.​\n \nUsamos herramientas como Python (Pandas, NumPy, Scikit-learn, XGBoost), R, SQL, \nPower BI, Tableau, entre otras, y trabajamos con grandes volúmenes de datos (Big Data) \ncuando es necesario.",
-      "documento": "Documento para CHAT bot de pagina web"
-    },
-    {
-      "id": "Documento para CHAT bot de pagina web_12",
-      "texto": "b) Visión por Computadora (Computer Vision) \nDesarrollamos soluciones de visión por computadora para interpretar imágenes y videos en \ntiempo real o desde archivos grabados.",
-      "documento": "Documento para CHAT bot de pagina web"
-    },
-    {
-      "id": "Documento para CHAT bot de pagina web_13",
-      "texto": "Estas soluciones permiten automatizar tareas \nvisuales en distintos contextos: \n●​ Detección y clasificación de objetos: identificación de personas, vehículos, \nanimales, herramientas, defectos de producción, etc.​\n \n●​ Reconocimiento facial: identificación o verificación de identidad a partir de \nimágenes o cámaras en vivo.​\n \n●​ Conteo automático: personas, autos, productos en líneas de montaje, etc.​\n \n●​ Control de calidad visual: detección de fallas, deformaciones o errores en \nproductos industriales.​\n \n●​ Lectura automática de textos y códigos: OCR (reconocimiento óptico de \ncaracteres), detección de matrículas, códigos QR o códigos de barras.​\n \nTrabajamos con frameworks como TensorFlow, PyTorch, OpenCV, YOLO (You Only Look \nOnce), Detectron2, MediaPipe, entre otros.",
-      "documento": "Documento para CHAT bot de pagina web"
-    },
-    {
-      "id": "Documento para CHAT bot de pagina web_14",
-      "texto": "c) Procesamiento de Lenguaje Natural (NLP) \nTambién aplicamos IA para trabajar con texto y lenguaje, ofreciendo soluciones como: \n●​ Clasificación automática de textos y correos electrónicos​\n \n●​ Análisis de sentimiento en redes sociales o encuestas​\n \n●​ Extracción de palabras clave o entidades​\n \n●​ Chatbots inteligentes y asistentes virtuales​\n \n●​ Sistemas de recomendación basados en texto​\n \nUtilizamos modelos modernos como BERT, GPT, Gemini, spaCy, Transformers, y otros.",
-      "documento": "Documento para CHAT bot de pagina web"
-    },
-    {
-      "id": "Documento para CHAT bot de pagina web_15",
-      "texto": "d) Integración y Despliegue \nTodos nuestros modelos de inteligencia artificial pueden integrarse a sistemas existentes \nmediante APIs REST o servicios embebidos. Brindamos soluciones listas para producción y \nfáciles de escalar.",
-      "documento": "Documento para CHAT bot de pagina web"
-    },
-    {
-      "id": "Documento para CHAT bot de pagina web_16",
-      "texto": "Ofrecemos: \n●​ Entrenamiento, validación y optimización de modelos.​\n \n●​ Integración con dashboards, apps móviles o sistemas empresariales.​\n \n●​ Monitorización de desempeño del modelo en tiempo real.​\n \n●​ Mejora continua mediante retraining con nuevos datos.​\n \ne) Casos de uso comunes \nNuestros clientes suelen utilizar nuestros servicios de IA para resolver problemas como: \n●​ Detección automática de intrusos en cámaras de seguridad.​\n \n●​ Seguimiento de activos o maquinaria en fábricas o campos.​\n \n●​ Control de acceso mediante reconocimiento facial.​\n \n●​ Predicción de demanda o consumo energético.​\n \n●​ Monitoreo ambiental usando imágenes satelitales o cámaras.​\n \n●​ Clasificación de productos en comercio electrónico.",
-      "documento": "Documento para CHAT bot de pagina web"
-    },
-    {
-      "id": "Documento para CHAT bot de pagina web_17",
-      "texto": "3. Desarrollo de Dispositivos IoT (versión ampliada) \nEn nuestra empresa desarrollamos soluciones completas de hardware y firmware para \nproyectos IoT (Internet de las Cosas), diseñadas a medida según las necesidades de \ncada cliente o industria. Integramos sensores, sistemas de comunicación, módulos de \nposicionamiento y actuadores para permitir la recolección, transmisión y procesamiento de \ndatos en tiempo real o diferido.",
-      "documento": "Documento para CHAT bot de pagina web"
-    },
-    {
-      "id": "Documento para CHAT bot de pagina web_18",
-      "texto": "a) Diseño de Dispositivos Personalizados \nCreamos dispositivos electrónicos embebidos que combinan sensores, microcontroladores y \nmódulos de comunicación para tareas específicas. Nuestra experiencia incluye: \n●​ Diseño electrónico de placas PCB personalizadas.​\n \n●​ Programación de firmware para microcontroladores (Arduino, ESP32, STM32, \nRaspberry Pi, etc.",
-      "documento": "Documento para CHAT bot de pagina web"
-    },
-    {
-      "id": "Documento para CHAT bot de pagina web_19",
-      "texto": ").​\n \n●​ Desarrollo de prototipos funcionales y cajas físicas para ambientes industriales \no exteriores.​\n \n●​ Integración de múltiples sensores (temperatura, humedad, presión, gases, \nluminosidad, corriente, movimiento, etc. ).​\n \n●​ Módulos GPS para rastreo y geolocalización de activos.​\n \n●​ Actuadores para control de válvulas, motores, relés, alarmas, luces, entre otros.​\n \nb) Conectividad y Protocolos \nNuestros dispositivos pueden operar de forma local, autónoma o conectados a redes.",
-      "documento": "Documento para CHAT bot de pagina web"
-    },
-    {
-      "id": "Documento para CHAT bot de pagina web_20",
-      "texto": "Soportamos distintos protocolos y tecnologías de comunicación según la aplicación: \n●​ Wi-Fi: ideal para zonas con cobertura de red local.​\n \n●​ GSM/GPRS/3G/4G: conectividad móvil mediante módulos como SIM800, A7670, \nSIM7600, entre otros.​\n \n●​ LoRa / LoRaWAN: bajo consumo y largo alcance, ideal para monitoreo rural o \nindustrial.​\n \n●​ Bluetooth / BLE: para comunicación cercana con smartphones u otros dispositivos.​\n \n●​ RS-485, Modbus, I2C, SPI, UART: protocolos de comunicación industrial o entre \nsensores.​\n \nImplementamos cifrado y autenticación cuando se requiere seguridad en la transmisión de \ndatos.",
-      "documento": "Documento para CHAT bot de pagina web"
-    },
-    {
-      "id": "Documento para CHAT bot de pagina web_21",
-      "texto": "c) Energía y Autonomía \nDiseñamos soluciones optimizadas para bajo consumo energético, incluyendo: \n●​ Alimentación por batería recargable o pilas reemplazables.​\n \n●​ Paneles solares para dispositivos autónomos en exteriores.​\n \n●​ Manejo de modos de suspensión y bajo consumo.​\n \n●​ Detección de fallos de energía y reconexión automática.​\n \nEsto permite que los dispositivos funcionen por largos períodos sin mantenimiento, \nespecialmente en zonas remotas.",
-      "documento": "Documento para CHAT bot de pagina web"
-    },
-    {
-      "id": "Documento para CHAT bot de pagina web_22",
-      "texto": "d) Aplicaciones de los Dispositivos IoT \nNuestros dispositivos IoT se utilizan en una variedad de casos de uso, entre ellos: \n●​ Monitoreo ambiental: temperatura, humedad, calidad del aire, gases tóxicos, \nniveles de agua.​\n \n●​ Rastreo GPS de vehículos, contenedores, ganado o personas.​\n \n●​ Sensado en agricultura de precisión: humedad del suelo, pluviometría, \nfotoperíodo.​\n \n●​ Control de energía eléctrica: consumo, corte remoto, detección de fallas.​\n \n●​ Seguridad y alarmas: detección de movimiento, apertura de puertas, incendio, \nintrusos.​\n \n●​ Automatización industrial y domótica: control remoto de sistemas, alertas y \nsupervisión continua.​\n \ne) Integración con Plataforma de Gestión \nTodos nuestros dispositivos pueden integrarse directamente con nuestra plataforma de \ngestión IoT, donde el usuario puede: \n●​ Ver datos en tiempo real.​\n \n●​ Configurar alertas o eventos automáticos.​\n \n●​ Activar o desactivar actuadores remotamente.​\n \n●​ Consultar históricos de variables y exportar datos.​\n \n●​ Monitorear el estado de conexión, batería y calidad de señal del dispositivo.​\n \nTambién ofrecemos la opción de integrarlos con plataformas externas mediante API o \nMQTT.",
-      "documento": "Documento para CHAT bot de pagina web"
-    },
-    {
-      "id": "Documento para CHAT bot de pagina web_23",
-      "texto": "4. Plataforma de Gestión IoT (versión ampliada) \nContamos con una plataforma propia de gestión IoT diseñada para que empresas, \norganizaciones y usuarios puedan administrar, monitorear y controlar dispositivos \nconectados desde cualquier lugar y en cualquier momento. Esta solución permite \ncentralizar la operación de sensores, actuadores y sistemas embebidos de forma segura, \neficiente y escalable.",
-      "documento": "Documento para CHAT bot de pagina web"
-    },
-    {
-      "id": "Documento para CHAT bot de pagina web_24",
-      "texto": "a) Visualización de Datos en Tiempo Real \nLa plataforma permite visualizar en dashboards personalizados los datos que envían los \ndispositivos en tiempo real: \n●​ Lecturas de sensores (temperatura, humedad, presión, nivel, gas, corriente, etc.",
-      "documento": "Documento para CHAT bot de pagina web"
-    },
-    {
-      "id": "Documento para CHAT bot de pagina web_25",
-      "texto": ").​\n \n●​ Estado de actuadores (encendido/apagado, activado/desactivado).​\n \n●​ Localización GPS de dispositivos móviles o fijos.​\n \n●​ Indicadores del sistema: señal, batería, conectividad, errores.​\n \nLos gráficos e interfaces son responsivos y adaptables a distintos tipos de dispositivos (PC, \ntablet, celular).",
-      "documento": "Documento para CHAT bot de pagina web"
-    },
-    {
-      "id": "Documento para CHAT bot de pagina web_26",
-      "texto": "b) Configuración y Control Remoto \nDesde la plataforma, los usuarios pueden: \n●​ Modificar parámetros de configuración del dispositivo (frecuencia de envío, \numbrales, identificadores).​\n \n●​ Activar o desactivar salidas digitales o actuadores como válvulas, relés, alarmas, \nluces, motores.​\n \n●​ Enviar comandos personalizados al dispositivo.​\n \n●​ Definir perfiles de comportamiento según reglas (por ejemplo: \"si la temperatura \nsupera 30°C, encender ventilador\").​\n \nEsto permite automatizar procesos y reaccionar en tiempo real ante condiciones \nespecíficas.",
-      "documento": "Documento para CHAT bot de pagina web"
-    },
-    {
-      "id": "Documento para CHAT bot de pagina web_27",
-      "texto": "c) Alertas, Notificaciones y Eventos \nEl sistema cuenta con un módulo de gestión de eventos que permite: \n●​ Definir alertas personalizadas por umbral, cambio brusco, pérdida de señal, \nbatería baja, etc.​\n \n●​ Recibir notificaciones por correo electrónico, SMS o Telegram.​\n \n●​ Registrar todos los eventos importantes en un log accesible por el usuario.​\n \nLas alertas pueden generar acciones automáticas en los dispositivos o activar protocolos de \nrespuesta.",
-      "documento": "Documento para CHAT bot de pagina web"
-    },
-    {
-      "id": "Documento para CHAT bot de pagina web_28",
-      "texto": "d) Almacenamiento Histórico y Reportes \nTodos los datos capturados se almacenan en una base de datos organizada, permitiendo: \n●​ Consultar registros históricos por fecha, sensor o ubicación.​\n \n●​ Descargar reportes en formato CSV o PDF.​\n \n●​ Visualizar tendencias, patrones y comportamiento a lo largo del tiempo.​\n \n●​ Realizar análisis comparativos entre dispositivos o ubicaciones.​\n \nIdeal para auditorías, mantenimiento preventivo, estudios técnicos o decisiones \nestratégicas.",
-      "documento": "Documento para CHAT bot de pagina web"
-    },
-    {
-      "id": "Documento para CHAT bot de pagina web_29",
-      "texto": "e) Gestión Multiusuario y Escalable \nNuestra plataforma es multiusuario y jerárquica: \n●​ Cada usuario accede solo a sus dispositivos o grupos asignados.​\n \n●​ Se pueden definir roles y permisos (administrador, operador, solo lectura, etc.",
-      "documento": "Documento para CHAT bot de pagina web"
-    },
-    {
-      "id": "Documento para CHAT bot de pagina web_30",
-      "texto": ").​\n \n●​ Los datos están aislados por cliente o empresa para garantizar la seguridad.​\n \n●​ Se puede escalar horizontalmente para soportar cientos o miles de dispositivos.​\n \nAdemás, permite administrar diferentes proyectos, clientes o instalaciones desde una \nsola cuenta maestra.",
-      "documento": "Documento para CHAT bot de pagina web"
-    },
-    {
-      "id": "Documento para CHAT bot de pagina web_31",
-      "texto": "f) Seguridad y Privacidad \nImplementamos mecanismos de seguridad robustos para garantizar la integridad y \nprivacidad de los datos: \n●​ Cifrado de datos en tránsito (TLS/HTTPS) y en reposo.​\n \n●​ Autenticación segura con usuario y contraseña, tokens o autenticación de dos \nfactores.​\n \n●​ Registros de acceso y cambios para trazabilidad.​\n \n●​ Gestión segura de claves de API y credenciales.​\n \nCumplimos con buenas prácticas de seguridad para ambientes industriales y públicos.",
-      "documento": "Documento para CHAT bot de pagina web"
-    },
-    {
-      "id": "Documento para CHAT bot de pagina web_32",
-      "texto": "g) Integración con Sistemas Externos \nNuestra plataforma puede interoperar con otros sistemas a través de: \n●​ API RESTful documentada y segura para consumo externo.​\n \n●​ Publicación/recepción por MQTT para sistemas en tiempo real.​\n \n●​ Exportación de datos a ERPs, CRMs, plataformas BI u otros sistemas de gestión.​\n \nTambién ofrecemos la posibilidad de desplegar instancias privadas o en la nube del \ncliente, si se requiere infraestructura dedicada. 5.",
-      "documento": "Documento para CHAT bot de pagina web"
-    },
-    {
-      "id": "Documento para CHAT bot de pagina web_33",
-      "texto": "Digitalización en lenguaje natural \nLa digitalización en lenguaje natural consiste en transformar expresiones humanas —ya \nsea escritas o habladas— en datos estructurados y organizados, listos para ser \nprocesados por sistemas digitales. En la práctica, esto significa que una persona puede registrar información simplemente \nhablando o escribiendo en lenguaje cotidiano, sin necesidad de llenar formularios complejos \nni seleccionar campos manualmente.",
-      "documento": "Documento para CHAT bot de pagina web"
-    },
-    {
-      "id": "Documento para CHAT bot de pagina web_34",
-      "texto": "El sistema de inteligencia artificial (IA) interpreta esa \nentrada y la convierte automáticamente en registros normalizados.",
-      "documento": "Documento para CHAT bot de pagina web"
-    },
-    {
-      "id": "Documento para CHAT bot de pagina web_35",
-      "texto": "Ejemplo:​\n Un usuario dicta o escribe: \n“Hoy Juan Pedro aplicó herbicida en la parcela norte durante 2 horas.” \nEl agente de IA procesa la frase y extrae las entidades relevantes: \n●​ Persona: Juan Pedro​\n \n●​ Tarea: Aplicó herbicida​\n \n●​ Lugar: Parcela norte​\n \n●​ Duración: 2 horas​\n \nCon esta interpretación, el texto libre se transforma en un registro digital estructurado que \npuede almacenarse en una tabla o base de datos.",
-      "documento": "Documento para CHAT bot de pagina web"
-    },
-    {
-      "id": "Documento para CHAT bot de pagina web_36",
-      "texto": "Beneficios de la digitalización en lenguaje natural \n●​ Simplicidad en el registro: El usuario habla o escribe de forma natural, reduciendo \ntiempos y errores en la carga manual.​\n \n●​ Automatización: El sistema identifica automáticamente personas, tareas, lugares, \nfechas, tiempos y otros campos predefinidos.​\n \n●​ Integración: Una vez digitalizados, los datos pueden utilizarse en informes, \nplanificación de actividades, generación de estadísticas, control de costos, gestión \nde personal y trazabilidad de operaciones.​\n \n●​ Flexibilidad: Permite capturar tanto registros individuales (ej.",
-      "documento": "Documento para CHAT bot de pagina web"
-    },
-    {
-      "id": "Documento para CHAT bot de pagina web_37",
-      "texto": "una tarea puntual) \ncomo grandes volúmenes de datos en procesos rutinarios.​\n \nEn resumen, la digitalización en lenguaje natural convierte la comunicación humana en \ninformación útil y accionable, facilitando la gestión eficiente de actividades y mejorando la \ncalidad de los datos disponibles en la organización. 6. Forma de pago \n \nLa plataforma ofrece un esquema mixto de servicios gratuitos y de pago por uso.",
-      "documento": "Documento para CHAT bot de pagina web"
-    },
-    {
-      "id": "Documento para CHAT bot de pagina web_38",
-      "texto": "●​ Servicios gratuitos: Incluyen todas aquellas funciones que no requieren el \nalmacenamiento de datos.",
-      "documento": "Documento para CHAT bot de pagina web"
-    },
-    {
-      "id": "Documento para CHAT bot de pagina web_39",
-      "texto": "Por ejemplo, un usuario puede utilizar el GPS de su \ndispositivo para visualizar en tiempo real sus movimientos o los de una máquina sin \ncosto alguno.​\n \n●​ Servicios de pago: En el momento en que el usuario decide grabar o registrar \ndatos (como guardar posiciones para consultarlas posteriormente), se aplicará un \ncargo por cada unidad registrada.​\n \nModalidad de pago \nEl sistema funciona bajo la modalidad de prepago: \n1.​ El usuario realiza una transferencia a la cuenta de la empresa, indicando su nombre \nde usuario y el monto que desea acreditar como saldo disponible.​\n \n2.​ La plataforma asigna una cuenta corriente virtual desde la cual se descuentan los \nconsumos, hasta agotar el saldo acreditado.​\n \n3.​ El prepago puede realizarse de forma mensual o anual, según las necesidades del \nusuario.​\n \nPolíticas de inactividad \nSi una cuenta permanece inactiva durante 3 meses y no dispone de saldo, todos los \nregistros almacenados se eliminarán de la base de datos.",
-      "documento": "Documento para CHAT bot de pagina web"
-    },
-    {
-      "id": "Documento para CHAT bot de pagina web_40",
-      "texto": "No obstante, dentro de ese plazo \nel usuario podrá descargar sus registros en formato CSV para conservarlos localmente.",
-      "documento": "Documento para CHAT bot de pagina web"
-    },
-    {
-      "id": "Documento para CHAT bot de pagina web_41",
-      "texto": "Tarifas \n●​ Registros manuales (ingresados directamente por el usuario) y registros \ngenerados por el agente de IA conversacional:​\n \n○​ 0,05 USD por registro.​\n \n●​ Registros automáticos (por ejemplo, posiciones GPS o datos de sensores):​\n \n○​ 0,05 USD por registro si el volumen diario no supera los 100 registros.​\n \n○​ 0,005 USD por registro si el volumen diario supera los 100 registros.​\n \nLos precios indicados no incluyen impuestos y podrán ser actualizados de \nacuerdo con las condiciones de la empresa.",
-      "documento": "Documento para CHAT bot de pagina web"
-    }
-  ],
-  "hashes": {
-    "Documento para CHAT bot de pagina web.pdf": "62ff7eb51a3003667c8c9229c415e281"
+[
+  {
+    "id": 0,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 0,
+    "text": "Nuestra\n \nempresa\n \nofrece\n \nsoluciones\n \nintegrales\n \nen\n \ntecnología,\n \nabarcando\n \nmúltiples\n \náreas\n \npara\n \ncubrir\n \nlas\n \nnecesidades\n \nde\n \nnuestros\n \nclientes\n \nen\n \ndistintos\n \nsectores. 1. Desarrollo\n \nde\n \nSoftware\n \nContamos\n \ncon\n \nun\n \nequipo\n \nespecializado\n \nen\n \nel\n \ndesarrollo\n \nde\n \nsoftware\n \na\n \nmedida,\n \nadaptado\n \na\n \ndistintos\n \nrubros\n \ne\n \nindustrias."
+  },
+  {
+    "id": 1,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 1,
+    "text": "Creamos\n \naplicaciones\n \nweb,\n \nmóviles\n \ny\n \nde\n \nescritorio,\n \nsistemas\n \nde\n \ngestión,\n \nplataformas\n \npersonalizadas\n \ny\n \nsoluciones\n \nescalables\n \nque\n \nse\n \najustan\n \na\n \nlos\n \nrequerimientos\n \nespecíficos\n \nde\n \ncada\n \ncliente. 2."
+  },
+  {
+    "id": 2,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 2,
+    "text": "Inteligencia\n \nArtificial\n \ny\n \nAnálisis\n \nde\n \nDatos\n \nOfrecemos\n \nservicios\n \nbasados\n \nen\n \ninteligencia\n \nartificial\n \npara\n \nanalizar\n \ndatos\n \nestructurados\n \ny\n \nno\n \nestructurados,\n \ngenerar\n \nreportes\n \nautomatizados,\n \ndetectar\n \npatrones\n \ny\n \npredecir\n \ncomportamientos."
+  },
+  {
+    "id": 3,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 3,
+    "text": "Desarrollamos\n \nmodelos\n \nde\n \nvisión\n \npor\n \ncomputadora\n \npara\n \nla\n \ndetección\n \ny\n \nclasificación\n \nde\n \nobjetos\n \nen\n \nimágenes\n \ny\n \nvideos\n \nen\n \ntiempo\n \nreal,\n \naplicables\n \na\n \nseguridad,\n \nindustria,\n \nagricultura,\n \nsalud,\n \nlogística\n \ny\n \nmás. 3. Desarrollo\n \nde\n \nDispositivos\n \nIoT\n \nDiseñamos\n \ny\n \ndesarrollamos\n \nsoluciones\n \nde\n \nhardware\n \ny\n \nfirmware\n \npara\n \nInternet\n \nde\n \nlas\n \nCosas\n \n(IoT)."
+  },
+  {
+    "id": 4,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 4,
+    "text": "Integramos\n \nsensores,\n \nmódulos\n \nGPS,\n \nsistemas\n \nde\n \ncomunicación\n \ny\n \nactuadores\n \npara\n \naplicaciones\n \ncomo\n \nmonitoreo\n \nambiental,\n \ntrazabilidad,\n \ncontrol\n \nindustrial,\n \nautomatización\n \ndel\n \nhogar\n \ny\n \ngestión\n \nremota\n \nde\n \ndispositivos. Nuestros\n \ndispositivos\n \npueden\n \noperar\n \nde\n \nforma\n \nautónoma\n \no\n \nconectados\n \na\n \nredes\n \n(Wi-Fi,\n \nGSM,\n \nLoRa,\n \netc.). 4."
+  },
+  {
+    "id": 5,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 5,
+    "text": "Plataforma\n \nde\n \nGestión\n \nIoT\n \nDisponemos\n \nde\n \nuna\n \nplataforma\n \npropia\n \npara\n \nla\n \ngestión\n \nintegral\n \nde\n \ndispositivos\n \nIoT,\n \ndonde\n \nlos\n \nusuarios\n \npueden\n \nvisualizar\n \ndatos\n \nen\n \ntiempo\n \nreal,\n \nconfigurar\n \nalertas,\n \ncontrolar\n \ndispositivos\n \nremotamente\n \ny\n \nacceder\n \na\n \nreportes\n \nhistóricos."
+  },
+  {
+    "id": 6,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 6,
+    "text": "La\n \nplataforma\n \nestá\n \ndiseñada\n \npara\n \nser\n \nsegura,\n \nescalable\n \ny\n \nmultiusuario,\n \nfacilitando\n \nla\n \nsupervisión\n \ny\n \ncontrol\n \nde\n \nproyectos\n \nIoT\n \ndesde\n \ncualquier\n \nlugar. 5. Digitalización\n \nen\n \nlenguaje\n \nnatural\n \nLa\n \ndigitalización\n \nen\n \nlenguaje\n \nnatural\n \nes\n \nel\n \nproceso\n \nde\n \ntomar\n \nfrases\n \nhumanas\n \n(texto\n \no\n \nvoz)\n \ny\n \nconvertirlas\n \nautomáticamente\n \nen\n \ndatos\n \nestructurados,\n \nlistos\n \npara\n \nsistemas\n \ndigitales."
+  },
+  {
+    "id": 7,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 7,
+    "text": "Desarrollamos\n \nun\n \nagente\n \nde\n \nIA\n \nconversacional\n \nque\n \ninterpreta\n \nel\n \nlenguaje\n \nnatural\n \ny\n \nlo\n \ntransforma\n \nen\n \ndatos\n \nestructurados\n \ny\n \nutilizables\n \npor\n \nsistemas\n \ninformáticos. 1. Desarrollo\n \nde\n \nSoftware\n \n(ampliado)\n Nos\n \nespecializamos\n \nen\n \nel\n \ndesarrollo\n \nde\n \nsoftware\n \na\n \nmedida\n \npara\n \nresolver\n \nnecesidades\n \nespecíficas\n \nde\n \nempresas,\n \norganizaciones\n \ne\n \ninstituciones."
+  },
+  {
+    "id": 8,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 8,
+    "text": "Diseñamos\n \ny\n \nconstruimos\n \nsistemas\n \nrobustos,\n \nescalables\n \ny\n \neficientes,\n \ntanto\n \npara\n \nentornos\n \nweb\n \ncomo\n \nmóviles\n \ny\n \nde\n \nescritorio. Trabajamos\n \nen\n \ndistintas\n \náreas\n \ndel\n \ndesarrollo,\n \nincluyendo:\n \n●\n \nAplicaciones\n \nweb\n \ncon\n \npaneles\n \nde\n \nadministración,\n \ngestión\n \nde\n \nusuarios,\n \nintegración\n \ncon\n \nbases\n \nde\n \ndatos,\n \ndashboards\n \ninteractivos\n \ny\n \nmódulos\n \npersonalizados."
+  },
+  {
+    "id": 9,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 9,
+    "text": "●\n \nAplicaciones\n \nmóviles\n \nnativas\n \no\n \nhíbridas\n \n(Android/iOS)\n \ncon\n \nfunciones\n \ncomo\n \ngeolocalización,\n \nnotificaciones\n \npush,\n \nregistro\n \nde\n \ndatos\n \noffline\n \ny\n \nsincronización\n \nen\n \nla\n \nnube. ●\n \nSoftware\n \nde\n \nescritorio\n \npara\n \nuso\n \nindustrial,\n \ninstitucional\n \no\n \ncientífico,\n \ncon\n \ninterfaces\n \nintuitivas\n \ny\n \nacceso\n \nlocal\n \no\n \nen\n \nred."
+  },
+  {
+    "id": 10,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 10,
+    "text": "●\n \nSistemas\n \nembebidos\n \npara\n \nintegración\n \ncon\n \nhardware\n \npersonalizado\n \n(microcontroladores,\n \nPLC,\n \ndispositivos\n \nIoT). ●\n \nIntegraciones\n \nAPI\n \ncon\n \nsistemas\n \nexternos,\n \npasarelas\n \nde\n \npago,\n \nservicios\n \nen\n \nla\n \nnube\n \no\n \nplataformas\n \nde\n \nterceros. Implementamos\n \nsoluciones\n \nen\n \ndiversos\n \nlenguajes\n \ny\n \nentornos\n \ntecnológicos\n \ncomo\n \nPython,\n \nJavaScript\n \n(Node.js,\n \nReact,\n \nVue),\n \nJava,\n \nC#,\n \nPHP,\n \nMySQL,\n \nPostgreSQL,\n \nFirebase,\n \nentre\n \notros."
+  },
+  {
+    "id": 11,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 11,
+    "text": "Adaptamos\n \nnuestras\n \nherramientas\n \nal\n \ntipo\n \nde\n \nproyecto\n \ny\n \na\n \nla\n \ninfraestructura\n \ndel\n \ncliente. Utilizamos\n \nmetodologías\n \nágiles\n \n(Scrum/Kanban)\n \npara\n \ngarantizar\n \nentregas\n \nparciales,\n \nciclos\n \niterativos,\n \nrevisión\n \ncontinua\n \ncon\n \nel\n \ncliente\n \ny\n \nadaptación\n \na\n \ncambios. Brindamos\n \nmantenimiento,\n \nsoporte\n \ntécnico\n \ny\n \nactualizaciones\n \nuna\n \nvez\n \nfinalizado\n \nel\n \ndesarrollo."
+  },
+  {
+    "id": 12,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 12,
+    "text": "Cada\n \nproyecto\n \nde\n \nsoftware\n \nparte\n \nde\n \nun\n \nanálisis\n \ndetallado\n \nde\n \nrequerimientos,\n \nlo\n \nque\n \nnos\n \npermite\n \nentregar\n \nsoluciones\n \npersonalizadas,\n \neficientes\n \ny\n \nalineadas\n \ncon\n \nlos\n \nobjetivos\n \ndel\n \ncliente. Nuestro\n \ncompromiso\n \nes\n \ndesarrollar\n \nherramientas\n \ndigitales\n \nque\n \ngeneren\n \nvalor\n \nreal,\n \noptimicen\n \nprocesos\n \ny\n \npotencien\n \nel\n \ncrecimiento\n \ndel\n \nnegocio. 2."
+  },
+  {
+    "id": 13,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 13,
+    "text": "Inteligencia\n \nArtificial\n \ny\n \nAnálisis\n \nde\n \nDatos\n \n(versión\n \nampliada)\n \nEn\n \nnuestra\n \nempresa\n \nofrecemos\n \nsoluciones\n \nbasadas\n \nen\n \nInteligencia\n \nArtificial\n \n(IA)\n \ny\n \nanálisis\n \navanzado\n \nde\n \ndatos\n \npara\n \nayudar\n \na\n \nempresas\n \ny\n \norganizaciones\n \na\n \ntransformar\n \ninformación\n \nen\n \nconocimiento\n \nútil\n \ny\n \naccionable."
+  },
+  {
+    "id": 14,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 14,
+    "text": "Desarrollamos\n \nmodelos\n \npersonalizados\n \nde\n \naprendizaje\n \nautomático\n \n(machine\n \nlearning)\n \ny\n \naprendizaje\n \nprofundo\n \n(deep\n \nlearning),\n \nadaptados\n \na\n \nproblemas\n \nreales\n \nen\n \ndistintos\n \nrubros,\n \ncomo\n \nindustria,\n \nsalud,\n \nseguridad,\n \nlogística,\n \nagricultura,\n \ny\n \nmás. a)\n \nAnálisis\n \nde\n \nDatos\n Trabajamos\n \ncon\n \ndatos\n \nestructurados\n \n(bases\n \nde\n \ndatos,\n \nhojas\n \nde\n \ncálculo)\n \ny\n \nno\n \nestructurados\n \n(texto\n \nlibre,\n \nimágenes,\n \nseñales,\n \naudio\n \no\n \nvideo)."
+  },
+  {
+    "id": 15,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 15,
+    "text": "Ofrecemos\n \nlos\n \nsiguientes\n \nservicios:\n \n●\n \nProcesamiento\n \ny\n \nlimpieza\n \nde\n \ndatos\n:\n \ntratamos\n \ndatos\n \nincompletos,\n \nduplicados,\n \nruidosos\n \no\n \ndispersos. ●\n \nAnálisis\n \nexploratorio\n:\n \ngeneración\n \nde\n \nestadísticas,\n \nvisualización\n \nde\n \ntendencias,\n \nidentificación\n \nde\n \ncorrelaciones. ●\n \nModelado\n \npredictivo\n:\n \npredicción\n \nde\n \ncomportamientos,\n \nvalores\n \nfuturos\n \no\n \neventos\n \nutilizando\n \nmodelos\n \nsupervisados\n \ny\n \nno\n \nsupervisados."
+  },
+  {
+    "id": 16,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 16,
+    "text": "●\n \nSegmentación\n \nde\n \nclientes\n:\n \nagrupación\n \ninteligente\n \nde\n \nusuarios\n \no\n \nproductos\n \nsegún\n \ncaracterísticas\n \nsimilares. ●\n \nAutomatización\n \nde\n \nreportes\n:\n \ngeneración\n \ndinámica\n \nde\n \ninformes\n \ncon\n \ndashboards\n \ninteractivos. Usamos\n \nherramientas\n \ncomo\n \nPython\n \n(Pandas,\n \nNumPy,\n \nScikit-learn,\n \nXGBoost),\n \nR,\n \nSQL,\n \nPower\n \nBI,\n \nTableau,\n \nentre\n \notras,\n \ny\n \ntrabajamos\n \ncon\n \ngrandes\n \nvolúmenes\n \nde\n \ndatos\n \n(Big\n \nData)\n \ncuando\n \nes\n \nnecesario."
+  },
+  {
+    "id": 17,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 17,
+    "text": "b)\n \nVisión\n \npor\n \nComputadora\n \n(Computer\n \nVision)\n \nDesarrollamos\n \nsoluciones\n \nde\n \nvisión\n \npor\n \ncomputadora\n \npara\n \ninterpretar\n \nimágenes\n \ny\n \nvideos\n \nen\n \ntiempo\n \nreal\n \no\n \ndesde\n \narchivos\n \ngrabados. Estas\n \nsoluciones\n \npermiten\n \nautomatizar\n \ntareas\n \nvisuales\n \nen\n \ndistintos\n \ncontextos:\n \n●\n \nDetección\n \ny\n \nclasificación\n \nde\n \nobjetos\n:\n \nidentificación\n \nde\n \npersonas,\n \nvehículos,\n \nanimales,\n \nherramientas,\n \ndefectos\n \nde\n \nproducción,\n \netc."
+  },
+  {
+    "id": 18,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 18,
+    "text": "●\n \nReconocimiento\n \nfacial\n:\n \nidentificación\n \no\n \nverificación\n \nde\n \nidentidad\n \na\n \npartir\n \nde\n \nimágenes\n \no\n \ncámaras\n \nen\n \nvivo. ●\n \nConteo\n \nautomático\n:\n \npersonas,\n \nautos,\n \nproductos\n \nen\n \nlíneas\n \nde\n \nmontaje,\n \netc. ●\n \nControl\n \nde\n \ncalidad\n \nvisual\n:\n \ndetección\n \nde\n \nfallas,\n \ndeformaciones\n \no\n \nerrores\n \nen\n \nproductos\n \nindustriales."
+  },
+  {
+    "id": 19,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 19,
+    "text": "●\n \nLectura\n \nautomática\n \nde\n \ntextos\n \ny\n \ncódigos\n:\n \nOCR\n \n(reconocimiento\n \nóptico\n \nde\n \ncaracteres),\n \ndetección\n \nde\n \nmatrículas,\n \ncódigos\n \nQR\n \no\n \ncódigos\n \nde\n \nbarras. Trabajamos\n \ncon\n \nframeworks\n \ncomo\n \nTensorFlow,\n \nPyTorch,\n \nOpenCV,\n \nYOLO\n \n(You\n \nOnly\n \nLook\n \nOnce),\n \nDetectron2,\n \nMediaPipe,\n \nentre\n \notros."
+  },
+  {
+    "id": 20,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 20,
+    "text": "c)\n \nProcesamiento\n \nde\n \nLenguaje\n \nNatural\n \n(NLP)\n También\n \naplicamos\n \nIA\n \npara\n \ntrabajar\n \ncon\n \ntexto\n \ny\n \nlenguaje,\n \nofreciendo\n \nsoluciones\n \ncomo:\n \n●\n \nClasificación\n \nautomática\n \nde\n \ntextos\n \ny\n \ncorreos\n \nelectrónicos\n \n \n●\n \nAnálisis\n \nde\n \nsentimiento\n \nen\n \nredes\n \nsociales\n \no\n \nencuestas\n \n \n●\n \nExtracción\n \nde\n \npalabras\n \nclave\n \no\n \nentidades\n \n \n●\n \nChatbots\n \ninteligentes\n \ny\n \nasistentes\n \nvirtuales\n \n \n●\n \nSistemas\n \nde\n \nrecomendación\n \nbasados\n \nen\n \ntexto\n \n \nUtilizamos\n \nmodelos\n \nmodernos\n \ncomo\n \nBERT,\n \nGPT,\n \nGemini,\n \nspaCy,\n \nTransformers,\n \ny\n \notros."
+  },
+  {
+    "id": 21,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 21,
+    "text": "d)\n \nIntegración\n \ny\n \nDespliegue\n \nTodos\n \nnuestros\n \nmodelos\n \nde\n \ninteligencia\n \nartificial\n \npueden\n \nintegrarse\n \na\n \nsistemas\n \nexistentes\n \nmediante\n \nAPIs\n \nREST\n \no\n \nservicios\n \nembebidos. Brindamos\n \nsoluciones\n \nlistas\n \npara\n \nproducción\n \ny\n \nfáciles\n \nde\n \nescalar. Ofrecemos:\n \n●\n \nEntrenamiento,\n \nvalidación\n \ny\n \noptimización\n \nde\n \nmodelos. ●\n \nIntegración\n \ncon\n \ndashboards,\n \napps\n \nmóviles\n \no\n \nsistemas\n \nempresariales."
+  },
+  {
+    "id": 22,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 22,
+    "text": "●\n \nMonitorización\n \nde\n \ndesempeño\n \ndel\n \nmodelo\n \nen\n \ntiempo\n \nreal. ●\n \nMejora\n \ncontinua\n \nmediante\n \nretraining\n \ncon\n \nnuevos\n \ndatos. e)\n \nCasos\n \nde\n \nuso\n \ncomunes\n \nNuestros\n \nclientes\n \nsuelen\n \nutilizar\n \nnuestros\n \nservicios\n \nde\n \nIA\n \npara\n \nresolver\n \nproblemas\n \ncomo:\n \n●\n \nDetección\n \nautomática\n \nde\n \nintrusos\n \nen\n \ncámaras\n \nde\n \nseguridad. ●\n \nSeguimiento\n \nde\n \nactivos\n \no\n \nmaquinaria\n \nen\n \nfábricas\n \no\n \ncampos."
+  },
+  {
+    "id": 23,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 23,
+    "text": "●\n \nControl\n \nde\n \nacceso\n \nmediante\n \nreconocimiento\n \nfacial. ●\n \nPredicción\n \nde\n \ndemanda\n \no\n \nconsumo\n \nenergético. ●\n \nMonitoreo\n \nambiental\n \nusando\n \nimágenes\n \nsatelitales\n \no\n \ncámaras. ●\n \nClasificación\n \nde\n \nproductos\n \nen\n \ncomercio\n \nelectrónico. 3."
+  },
+  {
+    "id": 24,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 24,
+    "text": "Desarrollo\n \nde\n \nDispositivos\n \nIoT\n \n(versión\n \nampliada)\n En\n \nnuestra\n \nempresa\n \ndesarrollamos\n \nsoluciones\n \ncompletas\n \nde\n \nhardware\n \ny\n \nfirmware\n \npara\n \nproyectos\n \nIoT\n \n(Internet\n \nde\n \nlas\n \nCosas)\n,\n \ndiseñadas\n \na\n \nmedida\n \nsegún\n \nlas\n \nnecesidades\n \nde\n \ncada\n \ncliente\n \no\n \nindustria."
+  },
+  {
+    "id": 25,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 25,
+    "text": "Integramos\n \nsensores,\n \nsistemas\n \nde\n \ncomunicación,\n \nmódulos\n \nde\n \nposicionamiento\n \ny\n \nactuadores\n \npara\n \npermitir\n \nla\n \nrecolección,\n \ntransmisión\n \ny\n \nprocesamiento\n \nde\n \ndatos\n \nen\n \ntiempo\n \nreal\n \no\n \ndiferido. a)\n \nDiseño\n \nde\n \nDispositivos\n \nPersonalizados\n \nCreamos\n \ndispositivos\n \nelectrónicos\n \nembebidos\n \nque\n \ncombinan\n \nsensores,\n \nmicrocontroladores\n \ny\n \nmódulos\n \nde\n \ncomunicación\n \npara\n \ntareas\n \nespecíficas."
+  },
+  {
+    "id": 26,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 26,
+    "text": "Nuestra\n \nexperiencia\n \nincluye:\n \n●\n \nDiseño\n \nelectrónico\n \nde\n \nplacas\n \nPCB\n \npersonalizadas. ●\n \nProgramación\n \nde\n \nfirmware\n \npara\n \nmicrocontroladores\n \n(Arduino,\n \nESP32,\n \nSTM32,\n \nRaspberry\n \nPi,\n \netc.). ●\n \nDesarrollo\n \nde\n \nprototipos\n \nfuncionales\n \ny\n \ncajas\n \nfísicas\n \npara\n \nambientes\n \nindustriales\n \no\n \nexteriores. ●\n \nIntegración\n \nde\n \nmúltiples\n \nsensores\n \n(temperatura,\n \nhumedad,\n \npresión,\n \ngases,\n \nluminosidad,\n \ncorriente,\n \nmovimiento,\n \netc.)."
+  },
+  {
+    "id": 27,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 27,
+    "text": "●\n \nMódulos\n \nGPS\n \npara\n \nrastreo\n \ny\n \ngeolocalización\n \nde\n \nactivos. ●\n \nActuadores\n \npara\n \ncontrol\n \nde\n \nválvulas,\n \nmotores,\n \nrelés,\n \nalarmas,\n \nluces,\n \nentre\n \notros. b)\n \nConectividad\n \ny\n \nProtocolos\n \nNuestros\n \ndispositivos\n \npueden\n \noperar\n \nde\n \nforma\n \nlocal,\n \nautónoma\n \no\n \nconectados\n \na\n \nredes. Soportamos\n \ndistintos\n \nprotocolos\n \ny\n \ntecnologías\n \nde\n \ncomunicación\n \nsegún\n \nla\n \naplicación:\n \n●\n \nWi-Fi\n:\n \nideal\n \npara\n \nzonas\n \ncon\n \ncobertura\n \nde\n \nred\n \nlocal."
+  },
+  {
+    "id": 28,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 28,
+    "text": "●\n \nGSM/GPRS/3G/4G\n:\n \nconectividad\n \nmóvil\n \nmediante\n \nmódulos\n \ncomo\n \nSIM800,\n \nA7670,\n \nSIM7600,\n \nentre\n \notros. ●\n \nLoRa\n \n/\n \nLoRaWAN\n:\n \nbajo\n \nconsumo\n \ny\n \nlargo\n \nalcance,\n \nideal\n \npara\n \nmonitoreo\n \nrural\n \no\n \nindustrial. ●\n \nBluetooth\n \n/\n \nBLE\n:\n \npara\n \ncomunicación\n \ncercana\n \ncon\n \nsmartphones\n \nu\n \notros\n \ndispositivos. ●\n \nRS-485,\n \nModbus,\n \nI2C,\n \nSPI,\n \nUART\n:\n \nprotocolos\n \nde\n \ncomunicación\n \nindustrial\n \no\n \nentre\n \nsensores."
+  },
+  {
+    "id": 29,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 29,
+    "text": "Implementamos\n \ncifrado\n \ny\n \nautenticación\n \ncuando\n \nse\n \nrequiere\n \nseguridad\n \nen\n \nla\n \ntransmisión\n \nde\n \ndatos. c)\n \nEnergía\n \ny\n \nAutonomía\n \nDiseñamos\n \nsoluciones\n \noptimizadas\n \npara\n \nbajo\n \nconsumo\n \nenergético,\n \nincluyendo:\n \n●\n \nAlimentación\n \npor\n \nbatería\n \nrecargable\n \no\n \npilas\n \nreemplazables. ●\n \nPaneles\n \nsolares\n \npara\n \ndispositivos\n \nautónomos\n \nen\n \nexteriores. ●\n \nManejo\n \nde\n \nmodos\n \nde\n \nsuspensión\n \ny\n \nbajo\n \nconsumo\n."
+  },
+  {
+    "id": 30,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 30,
+    "text": "●\n \nDetección\n \nde\n \nfallos\n \nde\n \nenergía\n \ny\n \nreconexión\n \nautomática. Esto\n \npermite\n \nque\n \nlos\n \ndispositivos\n \nfuncionen\n \npor\n \nlargos\n \nperíodos\n \nsin\n \nmantenimiento,\n \nespecialmente\n \nen\n \nzonas\n \nremotas. d)\n \nAplicaciones\n \nde\n \nlos\n \nDispositivos\n \nIoT\n \nNuestros\n \ndispositivos\n \nIoT\n \nse\n \nutilizan\n \nen\n \nuna\n \nvariedad\n \nde\n \ncasos\n \nde\n \nuso,\n \nentre\n \nellos:\n \n●\n \nMonitoreo\n \nambiental\n:\n \ntemperatura,\n \nhumedad,\n \ncalidad\n \ndel\n \naire,\n \ngases\n \ntóxicos,\n \nniveles\n \nde\n \nagua."
+  },
+  {
+    "id": 31,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 31,
+    "text": "●\n \nRastreo\n \nGPS\n \nde\n \nvehículos,\n \ncontenedores,\n \nganado\n \no\n \npersonas. ●\n \nSensado\n \nen\n \nagricultura\n \nde\n \nprecisión\n:\n \nhumedad\n \ndel\n \nsuelo,\n \npluviometría,\n \nfotoperíodo. ●\n \nControl\n \nde\n \nenergía\n \neléctrica\n:\n \nconsumo,\n \ncorte\n \nremoto,\n \ndetección\n \nde\n \nfallas. ●\n \nSeguridad\n \ny\n \nalarmas\n:\n \ndetección\n \nde\n \nmovimiento,\n \napertura\n \nde\n \npuertas,\n \nincendio,\n \nintrusos."
+  },
+  {
+    "id": 32,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 32,
+    "text": "●\n \nAutomatización\n \nindustrial\n \ny\n \ndomótica\n:\n \ncontrol\n \nremoto\n \nde\n \nsistemas,\n \nalertas\n \ny\n \nsupervisión\n \ncontinua. e)\n \nIntegración\n \ncon\n \nPlataforma\n \nde\n \nGestión\n \nTodos\n \nnuestros\n \ndispositivos\n \npueden\n \nintegrarse\n \ndirectamente\n \ncon\n \nnuestra\n \nplataforma\n \nde\n \ngestión\n \nIoT,\n \ndonde\n \nel\n \nusuario\n \npuede:\n \n●\n \nVer\n \ndatos\n \nen\n \ntiempo\n \nreal. ●\n \nConfigurar\n \nalertas\n \no\n \neventos\n \nautomáticos. ●\n \nActivar\n \no\n \ndesactivar\n \nactuadores\n \nremotamente."
+  },
+  {
+    "id": 33,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 33,
+    "text": "●\n \nConsultar\n \nhistóricos\n \nde\n \nvariables\n \ny\n \nexportar\n \ndatos. ●\n \nMonitorear\n \nel\n \nestado\n \nde\n \nconexión,\n \nbatería\n \ny\n \ncalidad\n \nde\n \nseñal\n \ndel\n \ndispositivo. También\n \nofrecemos\n \nla\n \nopción\n \nde\n \nintegrarlos\n \ncon\n \nplataformas\n \nexternas\n \nmediante\n \nAPI\n \no\n \nMQTT. 4."
+  },
+  {
+    "id": 34,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 34,
+    "text": "Plataforma\n \nde\n \nGestión\n \nIoT\n \n(versión\n \nampliada)\n \nContamos\n \ncon\n \nuna\n \nplataforma\n \npropia\n \nde\n \ngestión\n \nIoT\n \ndiseñada\n \npara\n \nque\n \nempresas,\n \norganizaciones\n \ny\n \nusuarios\n \npuedan\n \nadministrar,\n \nmonitorear\n \ny\n \ncontrolar\n \ndispositivos\n \nconectados\n \ndesde\n \ncualquier\n \nlugar\n \ny\n \nen\n \ncualquier\n \nmomento. Esta\n \nsolución\n \npermite\n \ncentralizar\n \nla\n \noperación\n \nde\n \nsensores,\n \nactuadores\n \ny\n \nsistemas\n \nembebidos\n \nde\n \nforma\n \nsegura,\n \neficiente\n \ny\n \nescalable."
+  },
+  {
+    "id": 35,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 35,
+    "text": "a)\n \nVisualización\n \nde\n \nDatos\n \nen\n \nTiempo\n \nReal\n \nLa\n \nplataforma\n \npermite\n \nvisualizar\n \nen\n \ndashboards\n \npersonalizados\n \nlos\n \ndatos\n \nque\n \nenvían\n \nlos\n \ndispositivos\n \nen\n \ntiempo\n \nreal:\n \n●\n \nLecturas\n \nde\n \nsensores\n \n(temperatura,\n \nhumedad,\n \npresión,\n \nnivel,\n \ngas,\n \ncorriente,\n \netc.). ●\n \nEstado\n \nde\n \nactuadores\n \n(encendido/apagado,\n \nactivado/desactivado). ●\n \nLocalización\n \nGPS\n \nde\n \ndispositivos\n \nmóviles\n \no\n \nfijos."
+  },
+  {
+    "id": 36,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 36,
+    "text": "●\n \nIndicadores\n \ndel\n \nsistema:\n \nseñal,\n \nbatería,\n \nconectividad,\n \nerrores. Los\n \ngráficos\n \ne\n \ninterfaces\n \nson\n \nresponsivos\n \ny\n \nadaptables\n \na\n \ndistintos\n \ntipos\n \nde\n \ndispositivos\n \n(PC,\n \ntablet,\n \ncelular). b)\n \nConfiguración\n \ny\n \nControl\n \nRemoto\n \nDesde\n \nla\n \nplataforma,\n \nlos\n \nusuarios\n \npueden:\n \n●\n \nModificar\n \nparámetros\n \nde\n \nconfiguración\n \ndel\n \ndispositivo\n \n(frecuencia\n \nde\n \nenvío,\n \numbrales,\n \nidentificadores)."
+  },
+  {
+    "id": 37,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 37,
+    "text": "●\n \nActivar\n \no\n \ndesactivar\n \nsalidas\n \ndigitales\n \no\n \nactuadores\n \ncomo\n \nválvulas,\n \nrelés,\n \nalarmas,\n \nluces,\n \nmotores. ●\n \nEnviar\n \ncomandos\n \npersonalizados\n \nal\n \ndispositivo. ●\n \nDefinir\n \nperfiles\n \nde\n \ncomportamiento\n \nsegún\n \nreglas\n \n(por\n \nejemplo:\n \n\"si\n \nla\n \ntemperatura\n \nsupera\n \n30°C,\n \nencender\n \nventilador\"). Esto\n \npermite\n \nautomatizar\n \nprocesos\n \ny\n \nreaccionar\n \nen\n \ntiempo\n \nreal\n \nante\n \ncondiciones\n \nespecíficas."
+  },
+  {
+    "id": 38,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 38,
+    "text": "c)\n \nAlertas,\n \nNotificaciones\n \ny\n \nEventos\n \nEl\n \nsistema\n \ncuenta\n \ncon\n \nun\n \nmódulo\n \nde\n \ngestión\n \nde\n \neventos\n \nque\n \npermite:\n \n●\n \nDefinir\n \nalertas\n \npersonalizadas\n \npor\n \numbral,\n \ncambio\n \nbrusco,\n \npérdida\n \nde\n \nseñal,\n \nbatería\n \nbaja,\n \netc. ●\n \nRecibir\n \nnotificaciones\n \npor\n \ncorreo\n \nelectrónico,\n \nSMS\n \no\n \nTelegram\n. ●\n \nRegistrar\n \ntodos\n \nlos\n \neventos\n \nimportantes\n \nen\n \nun\n \nlog\n \naccesible\n \npor\n \nel\n \nusuario."
+  },
+  {
+    "id": 39,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 39,
+    "text": "Las\n \nalertas\n \npueden\n \ngenerar\n \nacciones\n \nautomáticas\n \nen\n \nlos\n \ndispositivos\n \no\n \nactivar\n \nprotocolos\n \nde\n \nrespuesta. d)\n \nAlmacenamiento\n \nHistórico\n \ny\n \nReportes\n \nTodos\n \nlos\n \ndatos\n \ncapturados\n \nse\n \nalmacenan\n \nen\n \nuna\n \nbase\n \nde\n \ndatos\n \norganizada,\n \npermitiendo:\n \n●\n \nConsultar\n \nregistros\n \nhistóricos\n \npor\n \nfecha,\n \nsensor\n \no\n \nubicación. ●\n \nDescargar\n \nreportes\n \nen\n \nformato\n \nCSV\n \no\n \nPDF."
+  },
+  {
+    "id": 40,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 40,
+    "text": "●\n \nVisualizar\n \ntendencias,\n \npatrones\n \ny\n \ncomportamiento\n \na\n \nlo\n \nlargo\n \ndel\n \ntiempo. ●\n \nRealizar\n \nanálisis\n \ncomparativos\n \nentre\n \ndispositivos\n \no\n \nubicaciones. Ideal\n \npara\n \nauditorías,\n \nmantenimiento\n \npreventivo,\n \nestudios\n \ntécnicos\n \no\n \ndecisiones\n \nestratégicas. e)\n \nGestión\n \nMultiusuario\n \ny\n \nEscalable\n \nNuestra\n \nplataforma\n \nes\n \nmultiusuario\n \ny\n \njerárquica:\n \n●\n \nCada\n \nusuario\n \naccede\n \nsolo\n \na\n \nsus\n \ndispositivos\n \no\n \ngrupos\n \nasignados."
+  },
+  {
+    "id": 41,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 41,
+    "text": "●\n \nSe\n \npueden\n \ndefinir\n \nroles\n \ny\n \npermisos\n \n(administrador,\n \noperador,\n \nsolo\n \nlectura,\n \netc.). ●\n \nLos\n \ndatos\n \nestán\n \naislados\n \npor\n \ncliente\n \no\n \nempresa\n \npara\n \ngarantizar\n \nla\n \nseguridad. ●\n \nSe\n \npuede\n \nescalar\n \nhorizontalmente\n \npara\n \nsoportar\n \ncientos\n \no\n \nmiles\n \nde\n \ndispositivos. Además,\n \npermite\n \nadministrar\n \ndiferentes\n \nproyectos,\n \nclientes\n \no\n \ninstalaciones\n \ndesde\n \nuna\n \nsola\n \ncuenta\n \nmaestra."
+  },
+  {
+    "id": 42,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 42,
+    "text": "f)\n \nSeguridad\n \ny\n \nPrivacidad\n \nImplementamos\n \nmecanismos\n \nde\n \nseguridad\n \nrobustos\n \npara\n \ngarantizar\n \nla\n \nintegridad\n \ny\n \nprivacidad\n \nde\n \nlos\n \ndatos:\n \n●\n \nCifrado\n \nde\n \ndatos\n \nen\n \ntránsito\n \n(TLS/HTTPS)\n \ny\n \nen\n \nreposo. ●\n \nAutenticación\n \nsegura\n \ncon\n \nusuario\n \ny\n \ncontraseña,\n \ntokens\n \no\n \nautenticación\n \nde\n \ndos\n \nfactores. ●\n \nRegistros\n \nde\n \nacceso\n \ny\n \ncambios\n \npara\n \ntrazabilidad. ●\n \nGestión\n \nsegura\n \nde\n \nclaves\n \nde\n \nAPI\n \ny\n \ncredenciales."
+  },
+  {
+    "id": 43,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 43,
+    "text": "Cumplimos\n \ncon\n \nbuenas\n \nprácticas\n \nde\n \nseguridad\n \npara\n \nambientes\n \nindustriales\n \ny\n \npúblicos. g)\n \nIntegración\n \ncon\n \nSistemas\n \nExternos\n \nNuestra\n \nplataforma\n \npuede\n \ninteroperar\n \ncon\n \notros\n \nsistemas\n \na\n \ntravés\n \nde:\n \n●\n \nAPI\n \nRESTful\n \ndocumentada\n \ny\n \nsegura\n \npara\n \nconsumo\n \nexterno. ●\n \nPublicación/recepción\n \npor\n \nMQTT\n \npara\n \nsistemas\n \nen\n \ntiempo\n \nreal. ●\n \nExportación\n \nde\n \ndatos\n \na\n \nERPs,\n \nCRMs,\n \nplataformas\n \nBI\n \nu\n \notros\n \nsistemas\n \nde\n \ngestión."
+  },
+  {
+    "id": 44,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 44,
+    "text": "También\n \nofrecemos\n \nla\n \nposibilidad\n \nde\n \ndesplegar\n \ninstancias\n \nprivadas\n \no\n \nen\n \nla\n \nnube\n \ndel\n \ncliente\n,\n \nsi\n \nse\n \nrequiere\n \ninfraestructura\n \ndedicada. 5. Digitalización\n \nen\n \nlenguaje\n \nnatural\n \nLa\n \ndigitalización\n \nen\n \nlenguaje\n \nnatural\n \nconsiste\n \nen\n \ntransformar\n \nexpresiones\n \nhumanas\n \n—ya\n \nsea\n \nescritas\n \no\n \nhabladas—\n \nen\n \ndatos\n \nestructurados\n \ny\n \norganizados\n,\n \nlistos\n \npara\n \nser\n \nprocesados\n \npor\n \nsistemas\n \ndigitales."
+  },
+  {
+    "id": 45,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 45,
+    "text": "En\n \nla\n \npráctica,\n \nesto\n \nsignifica\n \nque\n \nuna\n \npersona\n \npuede\n \nregistrar\n \ninformación\n \nsimplemente\n \nhablando\n \no\n \nescribiendo\n \nen\n \nlenguaje\n \ncotidiano,\n \nsin\n \nnecesidad\n \nde\n \nllenar\n \nformularios\n \ncomplejos\n \nni\n \nseleccionar\n \ncampos\n \nmanualmente. El\n \nsistema\n \nde\n \ninteligencia\n \nartificial\n \n(IA)\n \ninterpreta\n \nesa\n \nentrada\n \ny\n \nla\n \nconvierte\n \nautomáticamente\n \nen\n \nregistros\n \nnormalizados."
+  },
+  {
+    "id": 46,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 46,
+    "text": "Ejemplo:\n \n \nUn\n \nusuario\n \ndicta\n \no\n \nescribe:\n “Hoy\n \nJuan\n \nPedro\n \naplicó\n \nherbicida\n \nen\n \nla\n \nparcela\n \nnorte\n \ndurante\n \n2\n \nhoras.”\n \nEl\n \nagente\n \nde\n \nIA\n \nprocesa\n \nla\n \nfrase\n \ny\n \nextrae\n \nlas\n \nentidades\n \nrelevantes:\n \n●\n \nPersona:\n \nJuan\n \nPedro\n \n \n●\n \nTarea:\n \nAplicó\n \nherbicida\n \n \n●\n \nLugar:\n \nParcela\n \nnorte\n \n \n●\n \nDuración:\n \n2\n \nhoras\n \n \nCon\n \nesta\n \ninterpretación,\n \nel\n \ntexto\n \nlibre\n \nse\n \ntransforma\n \nen\n \nun\n \nregistro\n \ndigital\n \nestructurado\n \nque\n \npuede\n \nalmacenarse\n \nen\n \nuna\n \ntabla\n \no\n \nbase\n \nde\n \ndatos."
+  },
+  {
+    "id": 47,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 47,
+    "text": "Beneficios\n \nde\n \nla\n \ndigitalización\n \nen\n \nlenguaje\n \nnatural\n \n●\n \nSimplicidad\n \nen\n \nel\n \nregistro:\n \nEl\n \nusuario\n \nhabla\n \no\n \nescribe\n \nde\n \nforma\n \nnatural,\n \nreduciendo\n \ntiempos\n \ny\n \nerrores\n \nen\n \nla\n \ncarga\n \nmanual. ●\n \nAutomatización:\n \nEl\n \nsistema\n \nidentifica\n \nautomáticamente\n \npersonas,\n \ntareas,\n \nlugares,\n \nfechas,\n \ntiempos\n \ny\n \notros\n \ncampos\n \npredefinidos."
+  },
+  {
+    "id": 48,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 48,
+    "text": "●\n \nIntegración:\n \nUna\n \nvez\n \ndigitalizados,\n \nlos\n \ndatos\n \npueden\n \nutilizarse\n \nen\n \ninformes,\n \nplanificación\n \nde\n \nactividades,\n \ngeneración\n \nde\n \nestadísticas,\n \ncontrol\n \nde\n \ncostos,\n \ngestión\n \nde\n \npersonal\n \ny\n \ntrazabilidad\n \nde\n \noperaciones. ●\n \nFlexibilidad:\n \nPermite\n \ncapturar\n \ntanto\n \nregistros\n \nindividuales\n \n(ej. una\n \ntarea\n \npuntual)\n \ncomo\n \ngrandes\n \nvolúmenes\n \nde\n \ndatos\n \nen\n \nprocesos\n \nrutinarios."
+  },
+  {
+    "id": 49,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 49,
+    "text": "En\n \nresumen,\n \nla\n \ndigitalización\n \nen\n \nlenguaje\n \nnatural\n \nconvierte\n \nla\n \ncomunicación\n \nhumana\n \nen\n \ninformación\n \nútil\n \ny\n \naccionable\n,\n \nfacilitando\n \nla\n \ngestión\n \neficiente\n \nde\n \nactividades\n \ny\n \nmejorando\n \nla\n \ncalidad\n \nde\n \nlos\n \ndatos\n \ndisponibles\n \nen\n \nla\n \norganización. 6. Forma\n \nde\n \npago\n \n \nLa\n \nplataforma\n \nofrece\n \nun\n \nesquema\n \nmixto\n \nde\n \nservicios\n \ngratuitos\n \ny\n \nde\n \npago\n \npor\n \nuso\n."
+  },
+  {
+    "id": 50,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 50,
+    "text": "●\n \nServicios\n \ngratuitos\n:\n \nIncluyen\n \ntodas\n \naquellas\n \nfunciones\n \nque\n \nno\n \nrequieren\n \nel\n \nalmacenamiento\n \nde\n \ndatos. Por\n \nejemplo,\n \nun\n \nusuario\n \npuede\n \nutilizar\n \nel\n \nGPS\n \nde\n \nsu\n \ndispositivo\n \npara\n \nvisualizar\n \nen\n \ntiempo\n \nreal\n \nsus\n \nmovimientos\n \no\n \nlos\n \nde\n \nuna\n \nmáquina\n \nsin\n costo\n \nalguno."
+  },
+  {
+    "id": 51,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 51,
+    "text": "●\n \nServicios\n \nde\n \npago\n:\n \nEn\n \nel\n \nmomento\n \nen\n \nque\n \nel\n \nusuario\n \ndecide\n \ngrabar\n \no\n \nregistrar\n \ndatos\n \n(como\n \nguardar\n \nposiciones\n \npara\n \nconsultarlas\n \nposteriormente),\n \nse\n \naplicará\n \nun\n \ncargo\n \npor\n \ncada\n \nunidad\n \nregistrada. Modalidad\n \nde\n \npago\n \nEl\n \nsistema\n \nfunciona\n \nbajo\n \nla\n \nmodalidad\n \nde\n \nprepago\n:\n \n1."
+  },
+  {
+    "id": 52,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 52,
+    "text": "El\n \nusuario\n \nrealiza\n \nuna\n \ntransferencia\n \na\n \nla\n \ncuenta\n \nde\n \nla\n \nempresa,\n \nindicando\n \nsu\n \nnombre\n \nde\n \nusuario\n \ny\n \nel\n \nmonto\n \nque\n \ndesea\n \nacreditar\n \ncomo\n \nsaldo\n \ndisponible. 2. La\n \nplataforma\n \nasigna\n \nuna\n \ncuenta\n \ncorriente\n \nvirtual\n \ndesde\n \nla\n \ncual\n \nse\n \ndescuentan\n \nlos\n \nconsumos,\n \nhasta\n \nagotar\n \nel\n \nsaldo\n \nacreditado. 3. El\n \nprepago\n \npuede\n \nrealizarse\n \nde\n \nforma\n \nmensual\n \no\n \nanual,\n \nsegún\n \nlas\n \nnecesidades\n \ndel\n \nusuario."
+  },
+  {
+    "id": 53,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 53,
+    "text": "Políticas\n \nde\n \ninactividad\n \nSi\n \nuna\n \ncuenta\n \npermanece\n \ninactiva\n \ndurante\n \n3\n \nmeses\n \ny\n \nno\n \ndispone\n \nde\n \nsaldo,\n \ntodos\n \nlos\n \nregistros\n \nalmacenados\n \nse\n \neliminarán\n \nde\n \nla\n \nbase\n \nde\n \ndatos. No\n \nobstante,\n \ndentro\n \nde\n \nese\n \nplazo\n \nel\n \nusuario\n \npodrá\n \ndescargar\n \nsus\n \nregistros\n \nen\n \nformato\n \nCSV\n \npara\n \nconservarlos\n \nlocalmente."
+  },
+  {
+    "id": 54,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 54,
+    "text": "Tarifas\n \n●\n \nRegistros\n \nmanuales\n \n(ingresados\n \ndirectamente\n \npor\n \nel\n \nusuario)\n \ny\n \nregistros\n \ngenerados\n \npor\n \nel\n \nagente\n \nde\n \nIA\n \nconversacional\n:\n \n \n○\n \n0,05\n \nUSD\n \npor\n \nregistro\n. ●\n \nRegistros\n \nautomáticos\n \n(por\n \nejemplo,\n \nposiciones\n \nGPS\n \no\n \ndatos\n \nde\n \nsensores):\n \n \n○\n \n0,05\n \nUSD\n \npor\n \nregistro\n \nsi\n \nel\n \nvolumen\n \ndiario\n \nno\n \nsupera\n \nlos\n \n100\n \nregistros\n. ○\n \n0,005\n \nUSD\n \npor\n \nregistro\n \nsi\n \nel\n \nvolumen\n \ndiario\n \nsupera\n \nlos\n \n100\n \nregistros\n."
+  },
+  {
+    "id": 55,
+    "file": "Documento para CHAT bot de pagina web.pdf",
+    "chunk_index": 55,
+    "text": "Los\n \nprecios\n \nindicados\n \nno\n \nincluyen\n \nimpuestos\n \ny\n \npodrán\n \nser\n \nactualizados\n \nde\n \nacuerdo\n \ncon\n \nlas\n \ncondiciones\n \nde\n \nla\n \nempresa."
   }
-}
+]
