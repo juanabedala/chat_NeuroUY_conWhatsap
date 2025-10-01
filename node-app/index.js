@@ -68,6 +68,7 @@ const MySQLStore = {
   async deleteSession({ session }) {
     return this.remove({ session });
   }
+  
 };
 
 // ---------- WhatsApp ----------
@@ -76,10 +77,14 @@ let qrDataUrl = null;
 const wa = new Client({
   authStrategy: new RemoteAuth({
     clientId: "bot1",
-    backupSyncIntervalMs: 60000, 
+    backupSyncIntervalMs: 300000, 
     store: MySQLStore
   }),
   puppeteer: { headless: true, args: ["--no-sandbox", "--disable-setuid-sandbox"] }
+});
+
+wa.on('remote_session_saved', () => {
+    console.log("Cliente gurdado en base remota.");
 });
 
 wa.on("qr", async (qr) => {
@@ -132,7 +137,7 @@ wa.on("message", async (msg) => {
 
     // 2) Preguntar a Gemini con ese contexto
     const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
     const prompt = `Usá el siguiente contexto para responder la pregunta del usuario, si no encuentras la respuesta intenta responderla tú,
 ten en cuenta que somos una empresa de TI que soluciona problemas a la industria y al agro.
